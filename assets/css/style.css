@@ -11,6 +11,10 @@ body {
     padding: 20px 0px;
 }
 
+.btn {
+    font-size: 2em;
+}
+
 #game-title {
     font-size: 1.7em;
     opacity: 0;
@@ -24,7 +28,11 @@ body {
     #game-title {
         font-size: 3em
     }
-    
+
+    .btn {
+        font-size: 5em;
+    }
+        
 }
 
 @media (min-width: 992px) {
