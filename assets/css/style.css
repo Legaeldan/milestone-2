@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
 body {
     background-color: #000000;
+    color: #ebebeb;
+    text-align: center;
+    font-family: "Rubik Mono One", "sans-serif"
+}
+
+.title-section {
+    padding: 20px 0px;
+}
+
+#game-title {
+    font-size: 1.7em;
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .title-section {
+        padding: 50px 0px;
+    }
+
+    #game-title {
+        font-size: 3em
+    }
+    
+}
+
+@media (min-width: 992px) {
+
 }
