@@ -13,6 +13,8 @@ body {
 
 .btn {
     font-size: 2em;
+    opacity: 0;
+    margin-top: 170px;
 }
 
 #game-title {
@@ -31,6 +33,7 @@ body {
 
     .btn {
         font-size: 5em;
+        margin-top: 220px;
     }
         
 }
