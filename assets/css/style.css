@@ -7,6 +7,10 @@ body {
     font-family: "Rubik Mono One", "sans-serif"
 }
 
+.hidden {
+    display: none;
+}
+
 .title-section {
     padding: 20px 0px;
 }
@@ -15,11 +19,49 @@ body {
     font-size: 2em;
     opacity: 0;
     margin-top: 170px;
+    position: absolute;
+    top: 0px;
+    width:200px;
+    margin-left:-100px;
 }
 
 #game-title {
     font-size: 1.7em;
     opacity: 0;
+}
+
+#main-section {
+    display: flex;
+    justify-content: center;
+}
+
+#simon-main {
+    list-style: none;
+    padding: 0;
+}
+
+.red-circle {
+    background: red;
+}
+
+.blue-circle {
+    background: blue;
+}
+
+.green-circle {
+    background: green;
+}
+
+.yellow-circle {
+    background: yellow;
+}
+
+li {
+display: inline-block;
+margin: 50px;
+width: 200px;
+height: 200px;
+border-radius: 100px;
 }
 
 @media (min-width: 768px) {
@@ -34,10 +76,19 @@ body {
     .btn {
         font-size: 5em;
         margin-top: 220px;
+        width:420px;
+        margin-left:-210px;
     }
-        
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {}
+li {
+width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
 
+#simon-main {
+    max-width: 1000px;
 }
