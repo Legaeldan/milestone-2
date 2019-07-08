@@ -62,6 +62,7 @@ margin: 50px;
 width: 200px;
 height: 200px;
 border-radius: 100px;
+visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -77,7 +78,7 @@ border-radius: 100px;
         font-size: 5em;
         margin-top: 220px;
         width:420px;
-        margin-left:-210px;
+        margin-left: 0;
     }
 
 }
