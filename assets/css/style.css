@@ -15,6 +15,10 @@ body {
     padding: 20px 0px;
 }
 
+.clicker {
+    display: none;
+}
+
 .btn {
     font-size: 2em;
     opacity: 0;
@@ -90,6 +94,11 @@ li {
     border-radius: 35px;
 }
 
+#clickCounter {
+    font-size: 2em;
+}
+
+x
 @media (min-width: 768px) {
     .title-section {
         padding: 50px 0px;
