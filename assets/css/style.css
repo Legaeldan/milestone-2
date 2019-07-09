@@ -19,18 +19,25 @@ body {
     display: none;
 }
 
-.btn {
-    font-size: 2em;
-    opacity: 0;
+#start-game {
+    display: none;
     margin-top: 170px;
     position: absolute;
     top: 0px;
     width: 200px;
 }
 
+#reset {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 2em;
+}
+
 #game-title {
     font-size: 1.7em;
-    opacity: 0;
+    display: none;
 }
 
 #main-section {
