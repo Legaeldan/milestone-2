@@ -1,3 +1,6 @@
+var totalClicks = 0;
+
+
 $(document).ready( function() {
     $("#game-title").fadeTo(2000, 1);
     $("#start-game").delay(1500).fadeTo(2000, 1);
@@ -10,6 +13,10 @@ $(document).ready( function() {
         $(this).toggleClass("jqhover");
     }).on("mouseup", function () {
         $(this).toggleClass("jqhover");
+    })
+
+    $(".four-buttons").on("click", function () {
+        totalClicks++;
     })
 
     //sound files defined below
@@ -33,7 +40,6 @@ $(document).ready( function() {
         simonSound.src = "assets/sounds/simonSound4.mp3";
         simonSound.play();
     });
-
 
 });
 
