@@ -1,16 +1,15 @@
 $(document).ready( function() {
-    $("#game-title").fadeTo(2000, 1);
-    $("#start-game").delay(1500).fadeTo(2000, 1);
-    
-
-    $("#start-game").on("click", function () {
-        $(this).fadeOut(1500, 0);
-        $("li").delay(1500).fadeIn(1500);
-        $(".clicker").delay(1500).fadeIn(1500);
-    });
+    $("#game-title").fadeIn(2000);
+    $("#start-game").delay(1500).fadeIn(2000);
     
 });
 
+//Brings start button and title into view
+$("#start-game").on("click", function () {
+    $(this).fadeOut(1500, 0);
+    $("li").delay(1500).fadeIn(1500);
+    $(".clicker").delay(1500).fadeIn(1500);
+});
 
 //Maintains and prints the total clicks
 var totalClicks = 0;
@@ -29,6 +28,8 @@ function clearGame() {
     document.getElementById("clickCounter").innerHTML = totalClicks;
     return;
 };
+
+$("#reset").on("click", clearGame);
 
 //Toggle the light up function when clicked
 $("li").on("mousedown", function () {
