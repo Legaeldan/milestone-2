@@ -1,3 +1,15 @@
+var totalClicks = 0;
+$(".four-buttons").on("click", function clicked() {
+    totalClicks++;
+    document.getElementById("clickCounter").innerHTML = totalClicks;
+})
+
+function clearGame() {
+    totalClicks = 0;
+    document.getElementById("clickCounter").innerHTML = totalClicks;
+    return;
+};
+
 $(document).ready( function() {
     $("#game-title").fadeTo(2000, 1);
     $("#start-game").delay(1500).fadeTo(2000, 1);
@@ -9,18 +21,14 @@ $(document).ready( function() {
         $(".clicker").delay(1500).fadeIn(1500);
     });
 
+    //Game reset or New game
+    
     $("li").on("mousedown", function () {
         $(this).toggleClass("jqhover");
     }).on("mouseup", function () {
         $(this).toggleClass("jqhover");
     })
  
-    var totalClicks = 0;
-    $(".four-buttons").on("click", function clicked() {
-        totalClicks++;
-        document.getElementById("clickCounter").innerHTML = totalClicks;
-    })
-
     //sound files defined below
     var simonSound = document.createElement("audio");
     simonSound.volume = 1;
