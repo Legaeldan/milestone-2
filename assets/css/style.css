@@ -21,8 +21,7 @@ body {
     margin-top: 170px;
     position: absolute;
     top: 0px;
-    width:200px;
-    margin-left:-100px;
+    width: 200px;
 }
 
 #game-title {
@@ -41,28 +40,28 @@ body {
 }
 
 .red-circle {
-    border: 10px solid red;
+    border: 10px solid #DF2833;
 }
 
 .blue-circle {
-    border: 10px solid blue;
+    border: 10px solid #0034FF;
 }
 
 .green-circle {
-    border: 10px solid green;
+    border: 10px solid #018E42;
 }
 
 .yellow-circle {
-    border: 10px solid yellow;
+    border: 10px solid #F7D002;
 }
 
 li {
-display: none;
-float: left;
-margin: 50px;
-width: 200px;
-height: 200px;
-border-radius: 100px;
+    display: none;
+    float: left;
+    margin: 37px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
 }
 
 @media (min-width: 768px) {
@@ -77,19 +76,28 @@ border-radius: 100px;
     .btn {
         font-size: 5em;
         margin-top: 220px;
-        width:420px;
+        width: 420px;
         margin-left: 0;
+    }
+
+    li {
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
     }
 
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
 li {
-width: 250px;
+    width: 250px;
     height: 250px;
     border-radius: 125px;
 }
 
 #simon-main {
     max-width: 700px;
+}
+
 }
