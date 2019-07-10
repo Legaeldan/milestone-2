@@ -4,10 +4,13 @@ $(document).ready(function () {
     $("#start-game").delay(1500).fadeIn(2000);
 });
 
-const possibleMoves = ['#green-circle','#blue-circle', '#red-circle', '#dark-yellow'];
+//const possibleMoves = ['#green-circle','#blue-circle', '#red-circle', '#dark-yellow'];
+var possibleMoves = $("#simon-main li");
 var movesMade = [];
 var playerMoves = [];
+var gameState = "waiting...";
 
+var randomNum =  Math.floor(Math.random() * 4);
 
 
 
