@@ -50,6 +50,10 @@ $("#start-game").on("click", function () {
     $(".clicker").delay(1500).fadeIn(1500);
     document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length + 1);
     $("#levelNo").delay(1500).fadeIn(1500);
+    randomise();
+    setTimeout(function() {
+        computerTurn();
+    }, 3000);
 });
 
 //Maintains and prints the total clicks
