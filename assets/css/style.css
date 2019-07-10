@@ -145,5 +145,10 @@ li {
 #simon-main {
     max-width: 700px;
 }
+#levelNo {
+    left: 40%;
+    top: 45%;
+}
+
 
 }
