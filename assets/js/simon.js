@@ -4,11 +4,20 @@ $(document).ready(function () {
     $("#start-game").delay(1500).fadeIn(2000);
 });
 
+const possibleMoves = ['#green-circle','#blue-circle', '#red-circle', '#dark-yellow'];
+var movesMade = [];
+var playerMoves = [];
+
+
+
+
 //Brings start button and title into view
 $("#start-game").on("click", function () {
     $(this).fadeOut(1500, 0);
     $("li").delay(1500).fadeIn(1500);
     $(".clicker").delay(1500).fadeIn(1500);
+    document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length + 1);
+    $("#levelNo").delay(1500).fadeIn(1500);
 });
 
 //Maintains and prints the total clicks
@@ -23,6 +32,7 @@ $(".four-buttons").on("click", function clicked() {
 function clearGame() {
     $("li").fadeOut(1500);
     $(".clicker").fadeOut(1500);
+    $("#levelNo").fadeOut(1500);
     $("#start-game").delay(1500).fadeIn(1500, 0);
     totalClicks = 0;
     document.getElementById("clickCounter").innerHTML = totalClicks;

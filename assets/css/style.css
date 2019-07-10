@@ -90,6 +90,10 @@ body {
     box-shadow: 0 0 45px 10px #F7D002;
 }
 
+#levelNo {
+    display: none;
+    position: absolute;
+}
 
 
 li {
