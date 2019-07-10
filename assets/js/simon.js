@@ -13,6 +13,8 @@ var gameState = "waiting...";
 var randomNum = 0;
 function randomise() {
     randomNum = Math.floor(Math.random() * 4);
+    movesMade.push(randomNum);
+    console.log(movesMade);
     console.log(randomNum);
 };
 
@@ -42,6 +44,8 @@ function clearGame() {
     $("#start-game").delay(1500).fadeIn(1500, 0);
     totalClicks = 0;
     document.getElementById("clickCounter").innerHTML = totalClicks;
+    movesMade = [];
+    playerMoves = [];
     return;
 };
 
