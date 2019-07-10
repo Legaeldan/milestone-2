@@ -10,8 +10,11 @@ var movesMade = [];
 var playerMoves = [];
 var gameState = "waiting...";
 
-var randomNum =  Math.floor(Math.random() * 4);
-
+var randomNum = 0;
+function randomise() {
+    randomNum = Math.floor(Math.random() * 4);
+    console.log(randomNum);
+};
 
 
 //Brings start button and title into view
