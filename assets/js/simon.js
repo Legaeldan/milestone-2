@@ -112,9 +112,12 @@ function computerTurn() {
 };
 
 function clicked(clickedID) {
+    var clickLoc = possibleMoves.indexOf(clickedID);
     playerMoves.indexOf(clickedID);
-    console.log(playerMoves.indexOf(clickedID));
+    playerMoves.push(clickLoc);
+    possibleMoves.indexOf(clickedID)
     console.log(clickedID);
+    console.log(playerMoves);
 }
 
 function playerTurn() {
