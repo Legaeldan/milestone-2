@@ -71,7 +71,7 @@ function computerTurn() {
         var colour = movesMade[i];
         var endColour = possibleMoves[colour];
    // setTimeout(function() {
-        if (endColour === "red") {
+    if (endColour === "red") {
             setTimeout(function() {
             $("#red").delay(1000 * i).toggleClass("jqhover");
         redSound();
@@ -108,6 +108,25 @@ function computerTurn() {
     console.log(colour); 
     //  }, 500 * movesMade.indexOf(colour) + 1);
     };
+    playerTurn();
+};
+
+function clicked(clickedID) {
+    playerMoves.indexOf(clickedID);
+    console.log(playerMoves.indexOf(clickedID));
+    console.log(clickedID);
+}
+
+function playerTurn() {
+    var arrayLength = movesMade.length;
+    for (let i = 0; i < arrayLength; i++) {
+        var colour = movesMade[i];
+        var endColour = possibleMoves[colour];
+        $(".four-buttons").onclick = function(){
+            $(this).getElementById();
+            console.log(id);
+        };
+};
 };
 
     //Clears the current game and resets the clicker to 0
