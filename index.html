@@ -34,14 +34,28 @@
                 <div class="warning" id="waiting">WAIT.....</div>
                 <div class="warning" id="playing">PLAY!</div>
             </div>
-            <div class="col-sm-12 col-md-2 clicker">
+            <div class="col-sm-12 col-xl-2 clicker">
                 <h4 class="clickHeader">Total clicks:</h4>
                 <div id="clickCounter">0</div>
                 <button type="button" class="btn btn-success" id=reset>Reset!</button>
                 </div>
         </div>
     </div>
-
+    <!--modal below-->
+    <div class="modal fade" id="gameOver" tabindex="-1" role="dialog" aria-labelledby="Game Over" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="gameOverDialogue">Game Over!</h5>
+            </div>
+            <div class="modal-body" id="gameOverModal">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Try Again?</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 <script src="assets/js/simon.js" type="text/javascript"></script>
 </html>
