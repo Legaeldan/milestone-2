@@ -6,9 +6,9 @@ $(document).ready(function () {
 
 const possibleMoves = ['red', 'green', 'yellow', 'blue'];
 //var possibleMoves = $("#simon-main li");
+var totalClicks = 0;
 var movesMade = [];
 var playerMoves = [];
-var gameState = "waiting...";
 var moveNumber;
 var randomNum = 0;
 
