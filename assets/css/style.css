@@ -11,6 +11,13 @@ body {
     font-family: "Rubik Mono One", "Squada One", "sans-serif";
 }
 
+.warning {
+    display: none;
+    position: absolute;
+    font-size: 2em;
+    top: 70vh;
+}
+
 .hidden {
     display: none;
 }
@@ -116,6 +123,10 @@ li {
 @media (min-width: 768px) {
     .title-section {
         padding: 50px 0px;
+    }
+
+    .warning {
+        font-size: 3em;
     }
 
     #game-title {
