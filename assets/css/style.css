@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@font-face {
+    font-family: "Squada One";
+    src: url('../lib/fonts/SquadaOne-Regular.ttf');
+}
 
 body {
     background-color: #071013;
     color: #ebebeb;
     text-align: center;
-    font-family: "Rubik Mono One", "sans-serif"
+    font-family: "Rubik Mono One", "Squada One", "sans-serif";
 }
 
 .hidden {
