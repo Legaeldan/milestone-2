@@ -16,6 +16,10 @@ The site is designed with the best user experience in mind, with the most minima
     - [**User Stories**](#user-stories)
 
 
+5. [**Deployment**](#deployment)
+    - [**Deployment to GitHub Pages**](#deployment-to-github-pages)
+    - [**Running this project locally**](#running-this-project-locally)
+
 
 ## UX
 
@@ -67,3 +71,37 @@ The main approach to this game is made to entertain all age groups with healthy 
 - Different toned beeps were chosen to make retention of the pattern easier to the user. Enabling both memory of sight, and sound.
 
 ### User Stories
+
+## Deployment
+
+This project was developed using the [AWS C9](https://aws.amazon.com/cloud9/) initially before moving locally to [Visual Studio Code](https://code.visualstudio.com/) and [Git](https://git-scm.com/downloads), committed to a local [Git](https://git-scm.com/downloads) repository, and pushed to [GitHub](https://github.com/Legaeldan/milestone-2) using a locally installed version of [Git](https://git-scm.com/downloads) via command prompt.
+
+The main method of deployment, [GitHub Pages](https://legaeldan.github.io/milestone-2/index.html), was chosen after a discussions with my mentor, and I was notified of GitHub pages, meaning I didn't need to boot up [AWS C9](https://aws.amazon.com/cloud9/) everytime I wished to showcase my site.
+
+### Deployment to GitHub Pages
+
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Legaeldan/milestone-2), the following steps were taken: 
+1. Log into GitHub. 
+2. From the list of repositories on the screen, select **Legaeldan/milestone-2**.
+3. From the menu items near the top of the page, select **Settings**.
+4. Scroll down to the **GitHub Pages** section.
+5. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
+6. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+
+### Running this project locally
+
+To clone this project from GitHub:
+1. Follow this link to the [GitHub repository](https://github.com/Legaeldan/milestone-2).
+2. Under the repository name, click the green "Clone or download" button.
+3. In the Clone with HTTPs section, copy the clone URL for the repository. 
+4. In your local editor program, open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type ```git clone```
+, and then paste the URL you copied in Step 3.
+
+```git clone https://github.com/USERNAME/REPOSITORY```
+
+7. Press Enter. Your local clone will be created.
+
+For more help on cloning a repository on Github, please click [here](https://help.github.com/en/articles/cloning-a-repository).
