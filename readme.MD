@@ -9,7 +9,7 @@ The site is designed with the best user experience in mind, with the most minima
 
 ## Table of Contents
 1. [**UX**](#ux)
-    - [**Project Goal**](#project-goal)
+    - [**Project Goals**](#project-goal)
     - [**Development Goals**](#development-Goals)
     - [**Wireframes**](#wireframes)
     - [**Design choices**](#design-choices)
@@ -19,14 +19,14 @@ The site is designed with the best user experience in mind, with the most minima
 
 ## UX
 
-### Project Goal
+### Project Goals
 
 The main objective in creating Simon Game! is to provide the user with a minimalistic, easy to use interface, while providing 
 different levels of difficulty for the more advanced players. 
 
 This game is design with all users in mind, from children to adults, and tries to account for the train of thought from all age groups.
 
-#### Development Goals
+#### Development Goal
 
 - A project I'd be excited to show off to people as a testament to my abilities. 
 - Well thought out programming to account for the unpredictability of users both young and old. 
@@ -41,6 +41,29 @@ then upscaled by hand into Visio.
 
 ### Design Choices
 
+The main approach to this game is made to entertain all age groups with healthy mental stimulation. The following design choices were made to reflect this:
 
+**Fonts**
+
+- The main body font **Rubik Mono One** was chosen due to it's clean cut design and rounded character, making the page design rounded and smooth.
+
+- The fallback font of **Squada One** was chosen due to it's similarity to Rubik Mono One. This was added in the event the font CDN wasn't available, and could be retrieved from the asset library.
+
+**Colours**
+
+- The colour choices are made to reflect the original Simon Says game from 1978. 
+- Button colours of green were chosen to better stand out, and be easier seen against the black background, with an active red colour to easier distinguish level difficulty.
+
+**Styling**
+
+- The light button minimalistic design was chosed the keep the page as simple as possible, and make the buttons easier to see when lit. 
+
+**Background**
+
+- Background colour of a slightly off black was selected to better stand out on screen opposed to the classic black. This also helps accentuate the colours on screen, and give more depth to the overall page.
+
+**Audio files**
+
+- Different toned beeps were chosen to make retention of the pattern easier to the user. Enabling both memory of sight, and sound.
 
 ### User Stories
