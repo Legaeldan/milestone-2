@@ -37,4 +37,10 @@ This game is design with all users in mind, from children to adults, and tries t
 The below wireframes are bundled together into one file, but were created both by hand to show some of the thought process, 
 then upscaled by hand into Visio.
 
-- [Wireframes](Link to be added once wireframe uploaded.)
+- [Wireframes](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/WireFrame2.pdf)
+
+### Design Choices
+
+
+
+### User Stories
