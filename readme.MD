@@ -20,6 +20,8 @@ The site is designed with the best user experience in mind, with the most minima
     - [**Deployment to GitHub Pages**](#deployment-to-github-pages)
     - [**Running this project locally**](#running-this-project-locally)
 
+6. [**Credits**](#credits)
+
 
 ## UX
 
@@ -110,6 +112,6 @@ For more help on cloning a repository on Github, please click [here](https://hel
 
 Inspiration for this project was found at [Medium.com](https://medium.com/front-end-weekly/create-simon-game-in-javascript-d53b474a7416). Wojciech Kałużny's game provided a lot of groundwork for the wireframes, and gave initial direction to the project.
 
-## Acknowledgements
+### Acknowledgements
 
 I received inspiration and assistance on this project from Simen Daehlin (Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://www.javascript.com/), but he pointed me in the right direction with each hurdle.
