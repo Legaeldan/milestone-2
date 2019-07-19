@@ -146,9 +146,11 @@ function playerTurn() {
 
     //Toggle the light up function when clicked
     $("li").on("mousedown", function () {
-        $(this).toggleClass("jqhover");
+        $(this).addClass("jqhover");
     }).on("mouseup", function () {
-        $(this).toggleClass("jqhover");
+        $(this).removeClass("jqhover");
+    }).on("mouseout", function () {
+        $(this).removeClass("jqhover");
     });
 
 
