@@ -62,10 +62,6 @@ body {
     margin-top: 20px;
 }
 
-.btn {
-    font-size: 2em;
-}
-
 #game-title {
     font-size: 1.7em;
     display: none;
@@ -145,13 +141,6 @@ li {
         padding: 50px 0px;
     }
 
-    #start-game {
-        font-size: 5em;
-        margin-top: 220px;
-        width: 420px;
-        margin-left: 0;
-    }
-
     .warning {
         font-size: 3em;
     }
@@ -160,7 +149,7 @@ li {
         font-size: 3em
     }
 
-    .btn {
+    #start-game {
         font-size: 5em;
         margin-top: 220px;
         width: 420px;
