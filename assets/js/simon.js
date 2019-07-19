@@ -154,16 +154,14 @@ function playerTurn() {
     });
 
 
-
-    $("#red").click(function() {
-        redSound();
-    });
-    $("#green").click(function() {
-        greenSound();
-    });
-    $("#yellow").click(function() {
-        yellowSound();
-    });
-    $("#blue").click(function() {
-        blueSound();
+    $(".four-buttons").on("click", function () {
+        if (this.id == "red") {
+            redSound();
+        } else if (this.id == "blue") {
+            blueSound();
+        } else if (this.id == "green") {
+            greenSound();
+        } else if (this.id == "yellow") {
+            yellowSound();
+        };
     });
