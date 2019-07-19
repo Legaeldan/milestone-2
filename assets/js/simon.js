@@ -117,7 +117,7 @@ function clicked(clickedID) {
 $(".four-buttons").on("click", function () {
     playerMoves.push(possibleMoves.indexOf(this.id));
     var lastMove = playerMoves.length - 1;
-    if (playerMoves.length == movesMade.length) {
+    if (playerMoves.length == movesMade.length && playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
         document.getElementById("clickCounter").innerHTML = totalClicks;
         randomise();
