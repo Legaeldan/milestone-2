@@ -130,10 +130,10 @@ body {
 li {
     display: none;
     float: left;
-    margin: 37px;
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
 
 #clickCounter {
@@ -168,12 +168,9 @@ li {
     }
 
     li {
-        display: none;
-        float: left;
-        margin: 37px;
-        width: 70px;
-        height: 70px;
-        border-radius: 35px;
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
     }
 
     #red {
@@ -216,11 +213,11 @@ li {
 
 @media (min-width: 992px) {
 
-li {
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-}
+    li {
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+    }
 
 #simon-main {
     max-width: 700px;
