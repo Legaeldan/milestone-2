@@ -5,13 +5,15 @@ $(document).ready(function () {
     $("#start-game").delay(5500).fadeIn(2000);
 });
 
+const easy = 1000;
+const medium = 600;
+const hard = 300;
 const possibleMoves = ['red', 'green', 'yellow', 'blue'];
-//var possibleMoves = $("#simon-main li");
 var totalClicks = 0;
 var movesMade = [];
 var playerMoves = [];
-var moveNumber;
 var randomNum = 0;
+var tempo = easy;
 
     //sound files defined below
     var simonSound = document.createElement("audio");
