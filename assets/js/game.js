@@ -91,10 +91,12 @@ function computerTurn() {
 $(".four-buttons").on("click", function () {
     playerMoves.push(possibleMoves.indexOf(this.id));
     var lastMove = playerMoves.length - 1;
+    const clicker = document.getElementById("clickCounter");
+    const gameOverMessage = document.getElementById("gameOverModal");
     if (playerMoves.length == movesMade.length && playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
         duration = (movesMade.length * tempo);
-        document.getElementById("clickCounter").innerHTML = totalClicks;
+        clicker.innerHTML = totalClicks;
         $("#playing").fadeOut(500).delay(duration + 1000).fadeIn(1500);
         $("#waiting").fadeIn(1500).delay(duration).fadeOut(500);
         randomise();
@@ -103,14 +105,14 @@ $(".four-buttons").on("click", function () {
         }, 1000);
     } else if (playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
-        document.getElementById("clickCounter").innerHTML = totalClicks;
+        clicker.innerHTML = totalClicks;
     } else if (playerMoves[lastMove] !== movesMade[lastMove] && totalClicks == 0) {
         $("#gameOver").modal();
-        document.getElementById("gameOverModal").innerHTML = "Unlucky! You got " + totalClicks + "! Try again and maybe this time you can try and get at least " + (totalClicks + 1) + "?!";
+        gameOverMessage.innerHTML = "Unlucky! You got " + totalClicks + "! Try again and maybe this time you can try and get at least " + (totalClicks + 1) + "?!";
         clearGame();
     } else {
         $("#gameOver").modal();
-        document.getElementById("gameOverModal").innerHTML = "Congratulations! You got " + totalClicks + "! Try again and maybe this time you can get " + (totalClicks + 1) + "!";
+        gameOverMessage.innerHTML = "Congratulations! You got " + totalClicks + "! Try again and maybe this time you can get " + (totalClicks + 1) + "!";
         clearGame();
     };
     console.log(playerMoves);
