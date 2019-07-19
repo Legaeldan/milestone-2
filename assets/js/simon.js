@@ -65,6 +65,10 @@ $("#start-game").on("click", function () {
     $(".speedControl").fadeOut(1500);
     $("li").delay(1500).fadeIn(1500);
     $(".clicker").delay(1500).fadeIn(1500);
+    if (window.innerWidth < 768) {
+        $("#clickCounter").fadeOut(0);
+        $(".clickHeader").fadeOut(0);
+     } 
     document.getElementById("levelNo").innerHTML = "Level:1";
     $("#levelNo").delay(1500).fadeIn(1500);
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
