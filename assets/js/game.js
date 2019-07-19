@@ -119,8 +119,8 @@ $(".four-buttons").on("click", function () {
 //Clears the current game and resets the clicker to 0
 function clearGame() {
     simonSound.volume = 0;
-    $(".fourbuttons").children().stop(true, true).toggleClass("jqhover");
-    $(".fourbuttons").children().removeClass("jqhover");
+    const fourbuttons = $(".fourbuttons").children();
+    fourbuttons.stop(true, true).toggleClass("jqhover").removeClass("jqhover");
     $("li").fadeOut(1500);
     $(".clicker").fadeOut(1500);
     $("#levelNo").fadeOut(1500);
