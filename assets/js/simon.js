@@ -17,34 +17,38 @@ var randomNum = 0;
 var tempo = easy;
 var duration = 0;
 
-    //sound files defined below
-    var simonSound = document.createElement("audio");
-    simonSound.volume = 1;
-    simonSound.autoplay = true;
-    function greenSound() {
-        simonSound.src = "assets/sounds/simonSound2.mp3";
-        simonSound.play();
-    }
-    function redSound() {
-        simonSound.src = "assets/sounds/simonSound1.mp3";
-        simonSound.play();
-    }
-    function yellowSound() {
-        simonSound.src = "assets/sounds/simonSound3.mp3";
-        simonSound.play();
-    }
-    function blueSound() {
-        simonSound.src = "assets/sounds/simonSound4.mp3";
-        simonSound.play();
-    }
+//sound files defined below
+var simonSound = document.createElement("audio");
+simonSound.volume = 1;
+simonSound.autoplay = true;
 
-    $(".speedControl").on("click", function () {
-        $(".speedControl").removeClass("btn-danger").addClass("btn-success");
-        $(this).addClass("btn-danger").removeClass("btn-success");
-        tempo = eval(this.id);
-    
-        console.log(tempo);
-    });
+function greenSound() {
+    simonSound.src = "assets/sounds/simonSound2.mp3";
+    simonSound.play();
+}
+
+function redSound() {
+    simonSound.src = "assets/sounds/simonSound1.mp3";
+    simonSound.play();
+}
+
+function yellowSound() {
+    simonSound.src = "assets/sounds/simonSound3.mp3";
+    simonSound.play();
+}
+
+function blueSound() {
+    simonSound.src = "assets/sounds/simonSound4.mp3";
+    simonSound.play();
+}
+
+$(".speedControl").on("click", function () {
+    $(".speedControl").removeClass("btn-danger").addClass("btn-success");
+    $(this).addClass("btn-danger").removeClass("btn-success");
+    tempo = eval(this.id);
+
+    console.log(tempo);
+});
 
 function randomise() {
     //generates random number
@@ -58,7 +62,7 @@ function randomise() {
 
 //Brings start button and title into view
 $("#start-game").on("click", function () {
-    simonSound.volume = 1;   
+    simonSound.volume = 1;
     duration = (movesMade.length * tempo);
     totalClicks = 0;
     document.getElementById("clickCounter").innerHTML = totalClicks;
@@ -69,12 +73,12 @@ $("#start-game").on("click", function () {
     if (window.innerWidth < 768) {
         $("#clickCounter").fadeOut(0);
         $(".clickHeader").fadeOut(0);
-     } 
+    }
     document.getElementById("levelNo").innerHTML = "Level:1";
     $("#levelNo").delay(1500).fadeIn(1500);
+    randomise();
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
     $("#playing").delay((duration) + 3000).fadeIn(1500);
-    randomise();
     setTimeout(function () {
         computerTurn();
     }, 3000);
@@ -89,45 +93,45 @@ function computerTurn() {
     for (let i = 0; i < movesMade.length; i++) {
         var colour = movesMade[i];
         var endColour = possibleMoves[colour];
-    if (endColour === "red") {
-        setTimeout(function () {
-            $("#red").delay(tempo * i).toggleClass("jqhover");
-            redSound();
+        if (endColour === "red") {
             setTimeout(function () {
-                $("#red").toggleClass("jqhover");
-            }, tempo / 2);
-        }, tempo * i);
-    } else if (endColour === "green") {
-        setTimeout(function () {
-            $("#green").delay(tempo * i).toggleClass("jqhover");
-            greenSound();
+                $("#red").delay(tempo * i).toggleClass("jqhover");
+                redSound();
+                setTimeout(function () {
+                    $("#red").toggleClass("jqhover");
+                }, tempo / 2);
+            }, tempo * i);
+        } else if (endColour === "green") {
             setTimeout(function () {
-                $("#green").toggleClass("jqhover");
-            }, tempo / 2);
-        }, tempo * i);
-    } else if (endColour === "yellow") {
-        setTimeout(function () {
-            $("#yellow").delay(tempo * i).toggleClass("jqhover");
-            yellowSound();
+                $("#green").delay(tempo * i).toggleClass("jqhover");
+                greenSound();
+                setTimeout(function () {
+                    $("#green").toggleClass("jqhover");
+                }, tempo / 2);
+            }, tempo * i);
+        } else if (endColour === "yellow") {
             setTimeout(function () {
-                $("#yellow").toggleClass("jqhover");
-            }, tempo / 2);
-        }, tempo * i);
-    } else {
-        setTimeout(function () {
-            $("#blue").toggleClass("jqhover");
-            blueSound();
+                $("#yellow").delay(tempo * i).toggleClass("jqhover");
+                yellowSound();
+                setTimeout(function () {
+                    $("#yellow").toggleClass("jqhover");
+                }, tempo / 2);
+            }, tempo * i);
+        } else {
             setTimeout(function () {
                 $("#blue").toggleClass("jqhover");
-            }, tempo / 2);
-        }, tempo * i);
-    };
-    setTimeout(function () {
-        $("#simon-main").removeClass("disableInput");
-    }, duration);
-    console.log(possibleMoves[colour]);
-    console.log(colour); 
-    //  }, 500 * movesMade.indexOf(colour) + 1);
+                blueSound();
+                setTimeout(function () {
+                    $("#blue").toggleClass("jqhover");
+                }, tempo / 2);
+            }, tempo * i);
+        };
+        setTimeout(function () {
+            $("#simon-main").removeClass("disableInput");
+        }, duration);
+        console.log(possibleMoves[colour]);
+        console.log(colour);
+        //  }, 500 * movesMade.indexOf(colour) + 1);
     };
 };
 
@@ -159,44 +163,44 @@ $(".four-buttons").on("click", function () {
     console.log(playerMoves);
 });
 
-    //Clears the current game and resets the clicker to 0
-    function clearGame() {
-        simonSound.volume = 0;   
-        $(".fourbuttons").children().stop(true, true).toggleClass("jqhover");
-        $(".fourbuttons").children().removeClass("jqhover");
-        $("li").fadeOut(1500);
-        $(".clicker").fadeOut(1500);
-        $("#levelNo").fadeOut(1500);
-        $("#playing").fadeOut(1500)
-        $("#start-game").delay(1500).fadeIn(1500, 0);
-        $(".speedControl").delay(1500).fadeIn(1500, 0);
-        movesMade = [];
-        playerMoves = [];
+//Clears the current game and resets the clicker to 0
+function clearGame() {
+    simonSound.volume = 0;
+    $(".fourbuttons").children().stop(true, true).toggleClass("jqhover");
+    $(".fourbuttons").children().removeClass("jqhover");
+    $("li").fadeOut(1500);
+    $(".clicker").fadeOut(1500);
+    $("#levelNo").fadeOut(1500);
+    $("#playing").fadeOut(1500)
+    $("#start-game").delay(1500).fadeIn(1500, 0);
+    $(".speedControl").delay(1500).fadeIn(1500, 0);
+    movesMade = [];
+    playerMoves = [];
+};
+
+
+
+//reset button tied to clearGame function
+$("#reset").on("click", clearGame);
+
+//Toggle the light up function when clicked
+$("li").on("mousedown touchstart", function () {
+    $(this).addClass("jqhover");
+}).on("mouseup touchend", function () {
+    $(this).removeClass("jqhover");
+}).on("mouseout", function () {
+    $(this).removeClass("jqhover");
+});
+
+
+$(".four-buttons").on("click", function () {
+    if (this.id == "red") {
+        redSound();
+    } else if (this.id == "blue") {
+        blueSound();
+    } else if (this.id == "green") {
+        greenSound();
+    } else if (this.id == "yellow") {
+        yellowSound();
     };
-    
-
-
-    //reset button tied to clearGame function
-    $("#reset").on("click", clearGame);
-
-    //Toggle the light up function when clicked
-    $("li").on("mousedown touchstart", function () {
-        $(this).addClass("jqhover");
-    }).on("mouseup touchend", function () {
-        $(this).removeClass("jqhover");
-    }).on("mouseout", function () {
-        $(this).removeClass("jqhover");
-    });
-
-
-    $(".four-buttons").on("click", function () {
-        if (this.id == "red") {
-            redSound();
-        } else if (this.id == "blue") {
-            blueSound();
-        } else if (this.id == "green") {
-            greenSound();
-        } else if (this.id == "yellow") {
-            yellowSound();
-        };
-    });
+});
