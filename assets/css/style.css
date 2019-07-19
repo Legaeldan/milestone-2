@@ -4,6 +4,10 @@
     src: url('../lib/fonts/SquadaOne-Regular.ttf');
 }
 
+.disableInput {
+    pointer-events: none;
+}
+
 body {
     background-color: #071013;
     color: #ebebeb;
