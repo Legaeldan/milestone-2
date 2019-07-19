@@ -64,8 +64,7 @@ $("#start-game").on("click", function () {
 function computerTurn() {
     document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length);
     playerMoves = [];
-    var arrayLength = movesMade.length;
-    for (let i = 0; i < arrayLength; i++) {
+    for (let i = 0; i < movesMade.length; i++) {
         var colour = movesMade[i];
         var endColour = possibleMoves[colour];
    // setTimeout(function() {
