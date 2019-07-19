@@ -103,7 +103,6 @@ function computerTurn() {
     console.log(colour); 
     //  }, 500 * movesMade.indexOf(colour) + 1);
     };
-    playerTurn();
 };
 
 function clicked(clickedID) {
@@ -115,17 +114,24 @@ function clicked(clickedID) {
     console.log(playerMoves);
 }
 
-function playerTurn() {
-    var arrayLength = movesMade.length;
-    for (let i = 0; i < arrayLength; i++) {
-        var colour = movesMade[i];
-        var endColour = possibleMoves[colour];
-        $(".four-buttons").onclick = function(){
-            $(this).getElementById();
-            console.log(id);
-        };
-};
-};
+$(".four-buttons").on("click", function () {
+    playerMoves.push(possibleMoves.indexOf(this.id));
+    var lastMove = playerMoves.length - 1;
+    if (playerMoves.length == movesMade.length) {
+        totalClicks++;
+        document.getElementById("clickCounter").innerHTML = totalClicks;
+        randomise();
+        setTimeout(function () {
+            computerTurn();
+        }, 1000);
+    } else if (playerMoves[lastMove] == movesMade[lastMove]) {
+        totalClicks++;
+        document.getElementById("clickCounter").innerHTML = totalClicks;
+    } else {
+        clearGame();
+    };
+    console.log(playerMoves);
+});
 
     //Clears the current game and resets the clicker to 0
     function clearGame() {
