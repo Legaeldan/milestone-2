@@ -82,41 +82,41 @@ body {
 }
 
 #red {
-    border: 10px solid #DF2833;
+    border: 4px solid #DF2833;
 }
 
 #blue {
-    border: 10px solid #0034FF;
+    border: 4px solid #0034FF;
 }
 
 #green {
-    border: 10px solid #018E42;
+    border: 4px solid #018E42;
 }
 
 #yellow {
-    border: 10px solid #F7D002;
+    border: 4px solid #F7D002;
 }
 
 #red.jqhover {
-    border: 10px solid #ff0000;
+    border: 4px solid #ff0000;
     background-color: #DF2833;
     box-shadow: 0 0 45px 10px #DF2833;
 }
 
 #blue.jqhover {
-    border: 10px solid #1500ff;
+    border: 4px solid #1500ff;
     background-color: #0034FF;
     box-shadow: 0 0 45px 10px #0034FF;
 }
 
 #green.jqhover {
-    border: 10px solid #00d620;
+    border: 4px solid #00d620;
     background-color: #018E42;
     box-shadow: 0 0 45px 10px #018E42;
 }
 
 #yellow.jqhover {
-    border: 10px solid #ffff00;
+    border: 4px solid #ffff00;
     background-color: #F7D002;
     box-shadow: 0 0 45px 10px #F7D002;
 }
@@ -168,9 +168,44 @@ li {
     }
 
     li {
-        width: 140px;
-        height: 140px;
-        border-radius: 70px;
+        display: none;
+        float: left;
+        margin: 37px;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+
+    #red {
+        border: 10px solid #DF2833;
+    }
+    
+    #blue {
+        border: 10px solid #0034FF;
+    }
+    
+    #green {
+        border: 10px solid #018E42;
+    }
+    
+    #yellow {
+        border: 10px solid #F7D002;
+    }
+
+    #red.jqhover {
+        border: 10px solid #ff0000;
+    }
+    
+    #blue.jqhover {
+        border: 10px solid #1500ff;
+    }
+    
+    #green.jqhover {
+        border: 10px solid #00d620;
+    }
+    
+    #yellow.jqhover {
+        border: 10px solid #ffff00;
     }
 
     .speedControl {
