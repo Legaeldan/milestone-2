@@ -1,7 +1,8 @@
 //Document ready function to fade in title and start
 $(document).ready(function () {
     $("#game-title").fadeIn(2000);
-    $("#start-game").delay(1500).fadeIn(2000);
+    $("#logo").delay(1500).fadeIn(2000).delay(500).fadeOut(2000);
+    $("#start-game").delay(5500).fadeIn(2000);
 });
 
 const possibleMoves = ['red', 'green', 'yellow', 'blue'];
