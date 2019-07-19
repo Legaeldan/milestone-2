@@ -62,6 +62,7 @@ $("#start-game").on("click", function () {
 
 //plays each iteration in array, but sound causes break
 function computerTurn() {
+    document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length);
     var arrayLength = movesMade.length;
     for (let i = 0; i < arrayLength; i++) {
         var colour = movesMade[i];
