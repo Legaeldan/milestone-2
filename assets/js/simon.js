@@ -58,6 +58,7 @@ function randomise() {
 
 //Brings start button and title into view
 $("#start-game").on("click", function () {
+    simonSound.volume = 1;  
     $(this).fadeOut(1500, 0);
     $("li").delay(1500).fadeIn(1500);
     $(".clicker").delay(1500).fadeIn(1500);
