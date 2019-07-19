@@ -58,10 +58,11 @@ function randomise() {
 
 //Brings start button and title into view
 $("#start-game").on("click", function () {
-    simonSound.volume = 1;  
+    simonSound.volume = 1;   
+    duration = (movesMade.length * tempo);
     totalClicks = 0;
     document.getElementById("clickCounter").innerHTML = totalClicks;
-    $(this).fadeOut(1500, 0);
+    $(this).fadeOut(1500);
     $(".speedControl").fadeOut(1500);
     $("li").delay(1500).fadeIn(1500);
     $(".clicker").delay(1500).fadeIn(1500);
@@ -73,8 +74,7 @@ $("#start-game").on("click", function () {
     $("#levelNo").delay(1500).fadeIn(1500);
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
     $("#playing").delay((duration) + 3000).fadeIn(1500);
-    randomise();
-    setTimeout(function() {
+    setTimeout(function () {
         computerTurn();
     }, 3000);
 });
