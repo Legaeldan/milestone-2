@@ -11,6 +11,10 @@ body {
     font-family: "Rubik Mono One", "Squada One", "sans-serif";
 }
 
+.modal-content {
+    color: #071013;
+}
+
 .warning {
     display: none;
     position: absolute;
