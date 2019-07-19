@@ -14,6 +14,7 @@ var movesMade = [];
 var playerMoves = [];
 var randomNum = 0;
 var tempo = easy;
+var duration = 0;
 
     //sound files defined below
     var simonSound = document.createElement("audio");
@@ -119,6 +120,7 @@ $(".four-buttons").on("click", function () {
     var lastMove = playerMoves.length - 1;
     if (playerMoves.length == movesMade.length && playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
+        duration = (movesMade.length * tempo);
         document.getElementById("clickCounter").innerHTML = totalClicks;
         $("#playing").fadeOut(500).delay(duration + 1000).fadeIn(1500);
         $("#waiting").fadeIn(1500).delay(duration).fadeOut(500);
