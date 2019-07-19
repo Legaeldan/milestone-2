@@ -120,6 +120,8 @@ $(".four-buttons").on("click", function () {
     if (playerMoves.length == movesMade.length && playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
         document.getElementById("clickCounter").innerHTML = totalClicks;
+        $("#playing").fadeOut(500).delay(duration + 1000).fadeIn(1500);
+        $("#waiting").fadeIn(1500).delay(duration).fadeOut(500);
         randomise();
         setTimeout(function () {
             computerTurn();
