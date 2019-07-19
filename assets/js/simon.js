@@ -74,6 +74,7 @@ $("#start-game").on("click", function () {
     $("#levelNo").delay(1500).fadeIn(1500);
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
     $("#playing").delay((duration) + 3000).fadeIn(1500);
+    randomise();
     setTimeout(function () {
         computerTurn();
     }, 3000);
