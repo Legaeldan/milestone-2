@@ -38,6 +38,14 @@ var duration = 0;
         simonSound.play();
     }
 
+    $(".speedControl").on("click", function () {
+        $(".speedControl").removeClass("btn-danger").addClass("btn-success");
+        $(this).addClass("btn-danger").removeClass("btn-success");
+        tempo = eval(this.id);
+    
+        console.log(tempo);
+    });
+
 function randomise() {
     //generates random number
     randomNum = Math.floor(Math.random() * 4);
