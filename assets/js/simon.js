@@ -131,7 +131,13 @@ $(".four-buttons").on("click", function () {
     } else if (playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
         document.getElementById("clickCounter").innerHTML = totalClicks;
+    } else if (playerMoves[lastMove] !== movesMade[lastMove] && totalClicks == 0) {
+        $("#gameOver").modal();
+        document.getElementById("gameOverModal").innerHTML = "Unlucky! You got " + totalClicks + "! Try again and maybe this time you can try and get at least " + (totalClicks + 1) + "?!";
+        clearGame();
     } else {
+        $("#gameOver").modal();
+        document.getElementById("gameOverModal").innerHTML = "Congratulations! You got " + totalClicks + "! Try again and maybe this time you can get " + (totalClicks + 1) + "!";
         clearGame();
     };
     console.log(playerMoves);
