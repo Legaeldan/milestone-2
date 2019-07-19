@@ -55,6 +55,7 @@ body {
     position: absolute;
     top: 0px;
     width: 200px;
+    font-size: 2em;
 }
 
 #reset {
@@ -142,6 +143,13 @@ li {
 @media (min-width: 768px) {
     .title-section {
         padding: 50px 0px;
+    }
+
+    #start-game {
+        font-size: 5em;
+        margin-top: 220px;
+        width: 420px;
+        margin-left: 0;
     }
 
     .warning {
