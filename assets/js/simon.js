@@ -64,6 +64,8 @@ $("#start-game").on("click", function () {
 function computerTurn() {
     document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length);
     playerMoves = [];
+    duration = (tempo * movesMade.length)
+    $("#simon-main").addClass("disableInput");
     for (let i = 0; i < movesMade.length; i++) {
         var colour = movesMade[i];
         var endColour = possibleMoves[colour];
@@ -101,6 +103,9 @@ function computerTurn() {
             }, tempo / 2);
         }, tempo * i);
     };
+    setTimeout(function () {
+        $("#simon-main").removeClass("disableInput");
+    }, duration);
     console.log(possibleMoves[colour]);
     console.log(colour); 
     //  }, 500 * movesMade.indexOf(colour) + 1);
