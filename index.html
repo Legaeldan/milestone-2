@@ -23,21 +23,21 @@
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3" id="main-section">
         <img id="logo" src="assets/images/logo.png" alt="Simon Says Logo">
-        <button type="button" class="btn btn-success" id="start-game">Start!</button>
-        <button type="button" class="btn btn-danger speedControl" id="easy">Easy</button>
-        <button type="button" class="btn btn-success speedControl" id="medium">Medium</button>
-        <button type="button" class="btn btn-success speedControl" id="hard">Hard</button>
-        <ul id="simon-main" class="">
+        <button type="button" class="btn btn-success mainControls" id="start-game">Start!</button>
+        <button type="button" class="btn btn-danger speedControl mainControls" id="easy">Easy</button>
+        <button type="button" class="btn btn-success speedControl mainControls" id="medium">Medium</button>
+        <button type="button" class="btn btn-success speedControl mainControls" id="hard">Hard</button>
+        <ul id="simon-main" class="fader">
           <li id="red" class="four-buttons"></li>
           <li id="green" class="four-buttons"></li>
           <div id=levelNo></div>
           <li id="yellow" class="four-buttons"></li>
           <li id="blue" class="four-buttons"></li>
         </ul>
-        <div class="warning" id="waiting">WAIT.....</div>
-        <div class="warning" id="playing">PLAY!</div>
+        <div class="warning fader" id="waiting">WAIT.....</div>
+        <div class="warning fader" id="playing">PLAY!</div>
       </div>
-      <div class="col-sm-12 col-xl-2 clicker">
+      <div class="col-sm-12 col-xl-2 clicker fader">
         <h4 class="clickHeader">Total clicks:</h4>
         <div id="clickCounter">0</div>
         <button type="button" class="btn btn-success" id=reset>Reset!</button>
@@ -60,5 +60,5 @@
     </div>
   </div>
 </body>
-<script src="assets/js/simon.js" type="text/javascript"></script>
+<script src="assets/js/game.js" type="text/javascript"></script>
 </html>
