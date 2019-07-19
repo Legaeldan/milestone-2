@@ -106,15 +106,6 @@ function computerTurn() {
     };
 };
 
-function clicked(clickedID) {
-    var clickLoc = possibleMoves.indexOf(clickedID);
-    playerMoves.indexOf(clickedID);
-    playerMoves.push(clickLoc);
-    possibleMoves.indexOf(clickedID)
-    console.log(clickedID);
-    console.log(playerMoves);
-}
-
 $(".four-buttons").on("click", function () {
     playerMoves.push(possibleMoves.indexOf(this.id));
     var lastMove = playerMoves.length - 1;
