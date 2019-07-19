@@ -3,6 +3,7 @@ $(document).ready(function () {
     $("#game-title").fadeIn(2000);
     $("#logo").delay(1500).fadeIn(2000).delay(500).fadeOut(2000);
     $("#start-game").delay(5500).fadeIn(2000);
+    $(".speedControl").delay(5500).fadeIn(2000, 0);
 });
 
 const easy = 1000;
