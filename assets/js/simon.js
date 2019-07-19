@@ -69,7 +69,6 @@ function computerTurn() {
     for (let i = 0; i < movesMade.length; i++) {
         var colour = movesMade[i];
         var endColour = possibleMoves[colour];
-   // setTimeout(function() {
     if (endColour === "red") {
         setTimeout(function () {
             $("#red").delay(tempo * i).toggleClass("jqhover");
@@ -142,16 +141,19 @@ $(".four-buttons").on("click", function () {
 
     //Clears the current game and resets the clicker to 0
     function clearGame() {
+        simonSound.volume = 0;   
+        $(".fourbuttons").children().stop(true, true).toggleClass("jqhover");
+        $(".fourbuttons").children().removeClass("jqhover");
         $("li").fadeOut(1500);
         $(".clicker").fadeOut(1500);
         $("#levelNo").fadeOut(1500);
+        $("#playing").fadeOut(1500)
         $("#start-game").delay(1500).fadeIn(1500, 0);
-        totalClicks = 0;
-        document.getElementById("clickCounter").innerHTML = totalClicks;
+        $(".speedControl").delay(1500).fadeIn(1500, 0);
         movesMade = [];
         playerMoves = [];
-        return;
     };
+    
 
 
     //reset button tied to clearGame function
