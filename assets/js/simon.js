@@ -145,9 +145,9 @@ function playerTurn() {
     $("#reset").on("click", clearGame);
 
     //Toggle the light up function when clicked
-    $("li").on("mousedown", function () {
+    $("li").on("mousedown touchstart", function () {
         $(this).addClass("jqhover");
-    }).on("mouseup", function () {
+    }).on("mouseup touchend", function () {
         $(this).removeClass("jqhover");
     }).on("mouseout", function () {
         $(this).removeClass("jqhover");
