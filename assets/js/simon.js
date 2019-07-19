@@ -69,38 +69,38 @@ function computerTurn() {
         var endColour = possibleMoves[colour];
    // setTimeout(function() {
     if (endColour === "red") {
-            setTimeout(function() {
-            $("#red").delay(1000 * i).toggleClass("jqhover");
-        redSound();
-        setTimeout(function() {
-            $("#red").toggleClass("jqhover");
-         }, 500);
-            },1000 * i);
-     } else if (endColour === "green") {
-        setTimeout(function() {
-        $("#green").delay(1000 * i).toggleClass("jqhover");
-        greenSound();
-        setTimeout(function() {
-            $("#green").toggleClass("jqhover");
-         }, 500);
-        }, 1000 * i);
-     } else if (endColour === "yellow") {
-        setTimeout(function() {
-        $("#yellow").delay(1000 * i).toggleClass("jqhover");
-       yellowSound();
-        setTimeout(function() {
-            $("#yellow").toggleClass("jqhover");
-         }, 500);
-        }, 1000 * i);
-     } else {
-        setTimeout(function() {
-        $("#blue").toggleClass("jqhover");
-       blueSound();
-        setTimeout(function() {
+        setTimeout(function () {
+            $("#red").delay(tempo * i).toggleClass("jqhover");
+            redSound();
+            setTimeout(function () {
+                $("#red").toggleClass("jqhover");
+            }, tempo / 2);
+        }, tempo * i);
+    } else if (endColour === "green") {
+        setTimeout(function () {
+            $("#green").delay(tempo * i).toggleClass("jqhover");
+            greenSound();
+            setTimeout(function () {
+                $("#green").toggleClass("jqhover");
+            }, tempo / 2);
+        }, tempo * i);
+    } else if (endColour === "yellow") {
+        setTimeout(function () {
+            $("#yellow").delay(tempo * i).toggleClass("jqhover");
+            yellowSound();
+            setTimeout(function () {
+                $("#yellow").toggleClass("jqhover");
+            }, tempo / 2);
+        }, tempo * i);
+    } else {
+        setTimeout(function () {
             $("#blue").toggleClass("jqhover");
-         }, 500);
-        }, 1000 * i);
-     };
+            blueSound();
+            setTimeout(function () {
+                $("#blue").toggleClass("jqhover");
+            }, tempo / 2);
+        }, tempo * i);
+    };
     console.log(possibleMoves[colour]);
     console.log(colour); 
     //  }, 500 * movesMade.indexOf(colour) + 1);
