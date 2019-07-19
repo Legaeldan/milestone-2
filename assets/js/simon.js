@@ -59,14 +59,6 @@ $("#start-game").on("click", function () {
     }, 3000);
 });
 
-//Maintains and prints the total clicks
-var totalClicks = 0;
-$(".four-buttons").on("click", function clicked() {
-    totalClicks++;
-    document.getElementById("clickCounter").innerHTML = totalClicks;
-});
-
-
 //plays each iteration in array, but sound causes break
 function computerTurn() {
     var arrayLength = movesMade.length;
