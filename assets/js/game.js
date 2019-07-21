@@ -19,8 +19,7 @@ var tempo = easy;
 var duration = 0;
 
 $(".speedControl").on("click", function () {
-    $(".speedControl").removeClass("btn-danger").addClass("btn-success");
-    $(this).addClass("btn-danger").removeClass("btn-success");
+    $(this).addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
     tempo = eval(this.id);
     console.log(tempo);
 });
@@ -43,14 +42,13 @@ $("#start-game").on("click", function () {
     document.getElementById("clickCounter").innerHTML = totalClicks;
     $(this).fadeOut(1500);
     $(".speedControl").fadeOut(1500);
-    $("li").delay(1500).fadeIn(1500);
+    $(".fader").delay(1500).fadeIn(1500);
     $(".clicker").delay(1500).fadeIn(1500);
     if (window.innerWidth < 768) {
         $("#clickCounter").fadeOut(0);
         $(".clickHeader").fadeOut(0);
     }
     document.getElementById("levelNo").innerHTML = "Level:1";
-    $("#levelNo").delay(1500).fadeIn(1500);
     randomise();
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
     $("#playing").delay((duration) + 3000).fadeIn(1500);
