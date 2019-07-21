@@ -82,6 +82,7 @@ body {
 }
 
 #simon-main {
+    display: none;
     list-style: none;
     padding: 0;
 }
@@ -132,7 +133,6 @@ body {
 
 
 li {
-    display: none;
     float: left;
     margin: 25px;
     width: 100px;
