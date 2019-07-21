@@ -4,15 +4,15 @@
     src: url('../lib/fonts/SquadaOne-Regular.ttf');
 }
 
-.disableInput {
-    pointer-events: none;
-}
-
 body {
     background-color: #071013;
     color: #ebebeb;
     text-align: center;
     font-family: "Rubik Mono One", "Squada One", "sans-serif";
+}
+
+.disableInput {
+    pointer-events: none;
 }
 
 .modal-content {
@@ -212,7 +212,7 @@ li {
     }
 
 #simon-main {
-    max-width: 700px;
+    max-width: 600px;
 }
 #levelNo {
     left: 40%;
