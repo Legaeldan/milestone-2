@@ -36,6 +36,7 @@ body {
 
 #gameControls {
     display: flex;
+    justify-content: center;
 }
 
 .speedControl {
