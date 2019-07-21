@@ -16,7 +16,7 @@ var movesMade = [];
 var playerMoves = [];
 var randomNum = 0;
 var tempo = easy;
-var duration = 0;
+var duration = (movesMade.length * tempo);
 
 $(".speedControl").on("click", function () {
     $(this).addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
@@ -51,7 +51,7 @@ $("#start-game").on("click", function () {
     document.getElementById("levelNo").innerHTML = "Level:1";
     randomise();
     $("#waiting").delay(1500).fadeIn(1500).delay(duration).fadeOut(500);
-    $("#playing").delay((duration) + 3000).fadeIn(1500);
+    $("#playing").delay(duration + 3000).fadeIn(1500);
     setTimeout(function () {
         computerTurn();
     }, 3000);
@@ -93,7 +93,6 @@ $(".four-buttons").on("click", function () {
     const gameOverMessage = document.getElementById("gameOverModal");
     if (playerMoves.length == movesMade.length && playerMoves[lastMove] == movesMade[lastMove]) {
         totalClicks++;
-        duration = (movesMade.length * tempo);
         clicker.innerHTML = totalClicks;
         $("#playing").fadeOut(500).delay(duration + 1000).fadeIn(1500);
         $("#waiting").fadeIn(1500).delay(duration).fadeOut(500);
