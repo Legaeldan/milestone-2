@@ -43,7 +43,10 @@ This game is design with all users in mind, from children to adults, and tries t
 The below wireframes are bundled together into one file, but were created both by hand to show some of the thought process, 
 then upscaled by hand into Visio.
 
-- [Wireframes](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/WireFrame2.pdf)
+- [Desktop](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/Desktop.pdf)
+- [Tablet](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/Tablet.pdf)
+- [Mobile](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/mobile.pdf)
+- [Complete Wireframes](https://github.com/Legaeldan/milestone-2/blob/master/assets/wireframes/WireFrame2.pdf)
 
 ### Design Choices
 
