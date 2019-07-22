@@ -59,10 +59,10 @@ $("#start-game").on("click", function () {
 
 function compEachTurn(tempo, i, color) {
 setTimeout(function () {
-    $("#"+color).delay(tempo * i).toggleClass("jqhover");
+    $("#"+color).delay(tempo * i).toggleClass("light");
     playSound(color);
     setTimeout(function () {
-        $("#"+color).toggleClass("jqhover");
+        $("#"+color).toggleClass("light");
     }, tempo / 2);
 }, tempo * i);
 };
@@ -119,7 +119,7 @@ $(".four-buttons").on("click", function () {
 function clearGame() {
     simonSound.volume = 0;
     const fourbuttons = $(".fourbuttons").children();
-    fourbuttons.stop(true, true).toggleClass("jqhover").removeClass("jqhover");
+    fourbuttons.stop(true, true).toggleClass("light").removeClass("light");
     $(".fader").stop(true, true).fadeOut(1500);
     $(".warning").stop(true, true).fadeOut(1500);
     $(".mainControls").delay(1500).fadeIn(1500, 0);
@@ -134,11 +134,11 @@ $("#reset").on("click", clearGame);
 
 //Toggle the light up function when clicked
 $("li").on("mousedown touchstart", function () {
-    $(this).addClass("jqhover");
+    $(this).addClass("light");
 }).on("mouseup touchend", function () {
-    $(this).removeClass("jqhover");
+    $(this).removeClass("light");
 }).on("mouseout", function () {
-    $(this).removeClass("jqhover");
+    $(this).removeClass("light");
 });
 
 
