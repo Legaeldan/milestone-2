@@ -120,7 +120,8 @@ function clearGame() {
     simonSound.volume = 0;
     const fourbuttons = $(".fourbuttons").children();
     fourbuttons.stop(true, true).toggleClass("jqhover").removeClass("jqhover");
-    $(".fader").stop(true, true).fadeIn().fadeOut(1500);
+    $(".fader").stop(true, true).fadeOut(1500);
+    $(".warning").stop(true, true).fadeOut(1500);
     $(".mainControls").delay(1500).fadeIn(1500, 0);
     movesMade = [];
     playerMoves = [];
