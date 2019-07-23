@@ -5,6 +5,7 @@
 }
 
 body {
+    user-select: none;
     background-color: #071013;
     color: #ebebeb;
     text-align: center;
