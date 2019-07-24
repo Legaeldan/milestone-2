@@ -38,7 +38,7 @@ $("#start-game").on("click", function () {
     $(".speedControl").fadeOut(1500);
     $(".fader").delay(1500).fadeIn(1500);  
     $("#reset").delay(1500).fadeIn(1500);  
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 767) {
         $("#clicker").delay(1500).fadeIn(1500);
     }
     document.getElementById("levelNo").innerHTML = "Level:1";
