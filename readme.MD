@@ -90,7 +90,7 @@ The main approach to this game is made to entertain all age groups with healthy 
   -This gives the feel of easing the player into the game, and not bombarding them with elements on the page that snap into view, then out again.
 
 <div align="center">
-<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen3.png?raw=true" alt="Screenshot: main game logo" >
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen3.PNG?raw=true" alt="Screenshot: main game logo" >
 </div>
 
 2. **Logo Loader**
@@ -98,7 +98,7 @@ The main approach to this game is made to entertain all age groups with healthy 
   -This logo was made by myself, with inspiration from google images when searching "Simon Game Logo".
 
 <div align="center">
-<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen1.png?raw=true" alt="Screenshot: start game screen" >
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen1.PNG?raw=true" alt="Screenshot: start game screen" >
 </div>
 
 3. **Speed Selection**
@@ -106,7 +106,7 @@ The main approach to this game is made to entertain all age groups with healthy 
   -Chosen to give the player the option to change the speed/difficulty of the current game going forward. 
 
 <div align="center">
-<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen2.png?raw=true" alt="Screenshot: main game board" >
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen2.PNG?raw=true" alt="Screenshot: main game board" >
 </div>
 
 4. **Interactive Buttons**
@@ -118,7 +118,7 @@ The main approach to this game is made to entertain all age groups with healthy 
   -The reset button was also designed with a leaderboard in mind, and will retain the click counter after selection, after the initial design that wiped the click counter immediately.
 
 <div align="center">
-<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen4.png?raw=true" alt="Screenshot: final score modal" >
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen4.PNG?raw=true" alt="Screenshot: final score modal" >
 </div>
 
 6. **Player Info Modal**
