@@ -39,7 +39,7 @@ $("#start-game").on("click", function () {
     $(".fader").delay(1500).fadeIn(1500);  
     $("#reset").delay(1500).fadeIn(1500);  
     if (window.innerWidth > 768) {
-        $(".clicker").delay(1500).fadeIn(1500);
+        $("#clicker").delay(1500).fadeIn(1500);
     }
     document.getElementById("levelNo").innerHTML = "Level:1";
     randomise();
