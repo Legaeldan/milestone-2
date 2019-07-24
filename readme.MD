@@ -15,6 +15,9 @@ The site is designed with the best user experience in mind, with the most minima
     - [**Design choices**](#design-choices)
     - [**User Stories**](#user-stories)
 
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
 
 5. [**Deployment**](#deployment)
     - [**Deployment to GitHub Pages**](#deployment-to-github-pages)
@@ -76,6 +79,41 @@ The main approach to this game is made to entertain all age groups with healthy 
 - Different toned beeps were chosen to make retention of the pattern easier to the user. Enabling both memory of sight, and sound.
 
 ### User Stories
+
+## Features
+ 
+### Existing Features
+
+1. **Gradual Fades**
+  -The player is first greeted with a blank page, with slow fades of each element into the page. Starting with the "Simon Game" title, followed by the logo. 
+  -Finally the fades result in the game start, and options menu to be displayed.
+  -This gives the feel of easing the player into the game, and not bombarding them with elements on the page that snap into view, then out again.
+
+2. **Logo Loader**
+  -This is only a page load image, so will not reappear during game resets. It's to give the game a feel of branding, and professionalism. 
+  -This logo was made by myself, with inspiration from google images when searching "Simon Game Logo".
+
+3. **Speed Selection**
+  -Originally not in the design. Without this made the game feel stale, and became boring very quickly, without any degree of challenge.
+  -Chosen to give the player the option to change the speed/difficulty of the current game going forward. 
+
+4. **Interactive Buttons**
+  -Lightable buttons were chosen as a minimalistic approach to game, to better accentuate the black background. So once lit, would create a greater sense of light.
+  -Buttons were also given a central void to make it easier to differentiate that a button has been pushed, or selected. Opposed to other games which colour the background the same colour.
+
+5. **Reset Button**
+  -The reset button was implimented to give the player the option to give up, and return to the start.
+  -The reset button was also designed with a leaderboard in mind, and will retain the click counter after selection, after the initial design that wiped the click counter immediately.
+
+### Features Left to Implement
+
+1. **Leaderboard**
+
+In the near future, I hopefully will get a chance to impliment a dynamic leaderboard, linked to an array of user details stored elsewhere.
+
+2. **Interactive Volume Slider**
+
+Upon closer inspection, for desktop users, a slider which can control the volume of the beeps would be invaluable. With a design of an upwards facing cone to control the volume, and would hopefully fill some of the void on the left hand side of the screen.
 
 ## Deployment
 
