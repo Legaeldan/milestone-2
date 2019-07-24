@@ -37,6 +37,7 @@ $("#start-game").on("click", function () {
     $(this).fadeOut(1500);
     $(".speedControl").fadeOut(1500);
     $(".fader").delay(1500).fadeIn(1500);  
+    $("#reset").delay(1500).fadeIn(1500);  
     if (window.innerWidth > 768) {
         $(".clicker").delay(1500).fadeIn(1500);
     }

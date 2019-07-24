@@ -69,6 +69,7 @@ body {
 }
 
 #reset {
+    display: none;
     margin-top: 20px;
 }
 
