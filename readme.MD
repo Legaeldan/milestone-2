@@ -89,13 +89,25 @@ The main approach to this game is made to entertain all age groups with healthy 
   -Finally the fades result in the game start, and options menu to be displayed.
   -This gives the feel of easing the player into the game, and not bombarding them with elements on the page that snap into view, then out again.
 
+<div align="center">
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen3.png?raw=true" alt="Screenshot: main game logo" >
+</div>
+
 2. **Logo Loader**
   -This is only a page load image, so will not reappear during game resets. It's to give the game a feel of branding, and professionalism. 
   -This logo was made by myself, with inspiration from google images when searching "Simon Game Logo".
 
+<div align="center">
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen1.png?raw=true" alt="Screenshot: start game screen" >
+</div>
+
 3. **Speed Selection**
   -Originally not in the design. Without this made the game feel stale, and became boring very quickly, without any degree of challenge.
   -Chosen to give the player the option to change the speed/difficulty of the current game going forward. 
+
+<div align="center">
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen2.png?raw=true" alt="Screenshot: main game board" >
+</div>
 
 4. **Interactive Buttons**
   -Lightable buttons were chosen as a minimalistic approach to game, to better accentuate the black background. So once lit, would create a greater sense of light.
@@ -104,6 +116,17 @@ The main approach to this game is made to entertain all age groups with healthy 
 5. **Reset Button**
   -The reset button was implimented to give the player the option to give up, and return to the start.
   -The reset button was also designed with a leaderboard in mind, and will retain the click counter after selection, after the initial design that wiped the click counter immediately.
+
+<div align="center">
+<img src="https://github.com/Legaeldan/milestone-2/blob/master/assets/images/screenshots/screen4.png?raw=true" alt="Screenshot: final score modal" >
+</div>
+
+6. **Player Info Modal**
+  -A modal is implimented to inform the player of the final count of clicks they achieved before failure.
+
+7. **Disable Input**
+  -After multiple testers, it was decided to research and impliment a disable input class to prevent users from clicking buttons outside of their turn.
+
 
 ### Features Left to Implement
 
