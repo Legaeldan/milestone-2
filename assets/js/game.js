@@ -36,11 +36,9 @@ $("#start-game").on("click", function () {
     document.getElementById("clickCounter").innerHTML = totalClicks;
     $(this).fadeOut(1500);
     $(".speedControl").fadeOut(1500);
-    $(".fader").delay(1500).fadeIn(1500);
-    $(".clicker").delay(1500).fadeIn(1500);
-    if (window.innerWidth < 768) {
-        $("#clickCounter").fadeOut(0);
-        $(".clickHeader").fadeOut(0);
+    $(".fader").delay(1500).fadeIn(1500);  
+    if (window.innerWidth > 768) {
+        $(".clicker").delay(1500).fadeIn(1500);
     }
     document.getElementById("levelNo").innerHTML = "Level:1";
     randomise();
@@ -112,6 +110,7 @@ function clearGame() {
     const fourbuttons = $(".fourbuttons").children();
     fourbuttons.stop(true, true).toggleClass("light").removeClass("light");
     $(".fader").stop(true, true).fadeOut(1500);
+    $(".clicker").stop(true, true).fadeOut(1500);
     $(".warning").stop(true, true).fadeOut(1500);
     $(".mainControls").delay(1500).fadeIn(1500, 0);
     movesMade = [];
