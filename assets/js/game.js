@@ -110,9 +110,7 @@ function clearGame() {
     simonSound.volume = 0;
     const fourbuttons = $(".fourbuttons").children();
     fourbuttons.stop(true, true).toggleClass("light").removeClass("light");
-    $(".fader").stop(true, true).fadeOut(1500);
-    $(".clicker").stop(true, true).fadeOut(1500);
-    $(".warning").stop(true, true).fadeOut(1500);
+    $(".clear").stop(true, true).fadeOut(1500);
     $(".mainControls").delay(1500).fadeIn(1500, 0);
     movesMade = [];
     playerMoves = [];
