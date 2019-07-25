@@ -15,20 +15,23 @@ var playerMoves = [];
 var randomNum = 0;
 var tempo = easy;
 var duration = (movesMade.length * tempo);
+/**Sets the tempo for the next game based on the id of the button clicked. */
 $(".speedControl").on("click", function () {
     $(this).addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
     tempo = eval(this.id);
     console.log(tempo);
 });
+/**Generates random number, and pushes to moveMade array. */
 function randomise() {
-    //generates random number
     randomNum = Math.floor(Math.random() * 4);
-    //Adds random number to array
     movesMade.push(randomNum);
     console.log(movesMade);
     console.log(randomNum);
 };
-//Brings start button and title into view
+/**Removes the start section, and brings the game board into view.
+ * Initiates the first random number generation, and switches to the computers turn
+ * after animation has ended.
+ */
 $("#start-game").on("click", function () {
     simonSound.volume = 1;
     duration = (movesMade.length * tempo);
@@ -49,6 +52,7 @@ $("#start-game").on("click", function () {
         computerTurn();
     }, 3000);
 });
+/**Sets delay and colour lighting for each iteration of the computer turn loop. */
 function compEachTurn(tempo, i, color) {
 setTimeout(function () {
     $("#"+color).delay(tempo * i).toggleClass("light");
@@ -58,7 +62,9 @@ setTimeout(function () {
     }, tempo / 2);
 }, tempo * i);
 };
-//plays each iteration in array, but sound causes break
+/**Initiates the computer turn loop based on array length of movesMade.
+ * Disables input until completed.
+ */
 function computerTurn() {
     document.getElementById("levelNo").innerHTML = "Level:" + (movesMade.length);
     playerMoves = [];
@@ -73,9 +79,11 @@ function computerTurn() {
         }, duration);
         console.log(possibleMoves[colour]);
         console.log(colour);
-        //  }, 500 * movesMade.indexOf(colour) + 1);
     };
 };
+/**Tells the system what to do once buttons are clicked. Checks against array of moves to follow.
+ * Enables the fail modal for when the player makes a wrong move.
+ */
 $(".four-buttons").on("click", function () {
     playerMoves.push(possibleMoves.indexOf(this.id));
     playSound(this.id);
@@ -105,7 +113,7 @@ $(".four-buttons").on("click", function () {
     };
     console.log(playerMoves);
 });
-//Clears the current game and resets the clicker to 0
+/**Clears the game board from view, and brings the start menu back into view. */
 function clearGame() {
     simonSound.volume = 0;
     const fourbuttons = $(".fourbuttons").children();
@@ -123,6 +131,7 @@ $("li").on("mousedown touchstart", function () {
 }).on("mouseup touchend mouseout", function () {
     $(this).removeClass("light");
 });
+/**Creates the sound file link based on colour of argument input. */
 function playSound(color){
     simonSound.src="assets/sounds/"+color+"Sound.mp3"
     simonSound.play();
