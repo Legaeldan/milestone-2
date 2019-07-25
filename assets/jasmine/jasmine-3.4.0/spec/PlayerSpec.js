@@ -1,9 +1,7 @@
 describe('Main control control button functions', function() {
-    
-    var spyEvent = spyOnEvent(this.id, 'click')
-
+  
     beforeEach(() => {
-        spyEvent = spyOnEvent(this.id, 'click');
+        spyEvent = spyOnEvent(".speedControl", 'click');
         setFixtures(`
         <button type="button" class="btn btn-success speedControl mainControls" id="easy"></button>
         <button type="button" class="btn btn-danger speedControl mainControls" id="easy"></button>
@@ -18,7 +16,7 @@ describe('Main control control button functions', function() {
     describe('on click easy difficulty button', function() {
         it('should remove class "btn-success" from current clicked button', function() {
             $("#easy").trigger("click");
-            expect($("#easy")).toHaveClass('btn-success');
+            expect($("#easy").hasClass('btn-success')).toBe(true);
         });
         it('should add class "btn-danger" to current clicked button', function() {
             $("#easy").trigger("click");
@@ -55,7 +53,7 @@ describe('Main control control button functions', function() {
                     expect($("#hard")).not.toHaveClass('btn-danger');
                 });
                 it('should change tempo to current setting', function() {
-                    speedControl();
+                    $("#hard").trigger("click");
                     expect(tempo).toEqual(hard);
                 });
             });
