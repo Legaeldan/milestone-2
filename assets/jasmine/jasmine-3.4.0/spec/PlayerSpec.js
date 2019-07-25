@@ -1,58 +1,65 @@
-describe("Player", function() {
-  var player;
-  var song;
+describe('Main control control button functions', function() {
+    
+    var spyEvent = spyOnEvent(this.id, 'click')
 
-  beforeEach(function() {
-    player = new Player();
-    song = new Song();
-  });
-
-  it("should be able to play a Song", function() {
-    player.play(song);
-    expect(player.currentlyPlayingSong).toEqual(song);
-
-    //demonstrates use of custom matcher
-    expect(player).toBePlaying(song);
-  });
-
-  describe("when song has been paused", function() {
-    beforeEach(function() {
-      player.play(song);
-      player.pause();
+    beforeEach(() => {
+        spyEvent = spyOnEvent(this.id, 'click');
+        setFixtures(`
+        <button type="button" class="btn btn-success speedControl mainControls" id="easy"></button>
+        <button type="button" class="btn btn-danger speedControl mainControls" id="easy"></button>
+        <button type="button" class="btn btn-success speedControl mainControls" id="medium"></button>
+        <button type="button" class="btn btn-danger speedControl mainControls" id="medium"></button>
+        <button type="button" class="btn btn-success speedControl mainControls" id="hard"></button>
+        <button type="button" class="btn btn-danger speedControl mainControls" id="hard"></button>
+        
+        `)
     });
 
-    it("should indicate that the song is currently paused", function() {
-      expect(player.isPlaying).toBeFalsy();
-
-      // demonstrates use of 'not' with a custom matcher
-      expect(player).not.toBePlaying(song);
+    describe('on click easy difficulty button', function() {
+        it('should remove class "btn-success" from current clicked button', function() {
+            $("#easy").trigger("click");
+            expect($("#easy")).toHaveClass('btn-success');
+        });
+        it('should add class "btn-danger" to current clicked button', function() {
+            $("#easy").trigger("click");
+            expect($("#easy")).not.toHaveClass('btn-danger');
+        });
+        it('should change tempo to current setting', function() {
+            $("#easy").trigger("click");
+            expect(tempo).toEqual(easy);
+        });
     });
 
-    it("should be possible to resume", function() {
-      player.resume();
-      expect(player.isPlaying).toBeTruthy();
-      expect(player.currentlyPlayingSong).toEqual(song);
+        describe('on click medium difficulty button', function() {
+            it('should remove class "btn-success" from current clicked button', function() {
+                $("#medium").trigger("click");
+                expect($("#medium")).toHaveClass('btn-success');
+            });
+            it('should add class "btn-danger" to current clicked button', function() {
+                $("#medium").trigger("click");
+                expect($("#medium")).not.toHaveClass('btn-danger');
+            });
+            it('should change tempo to current setting', function() {
+                $("#medium").trigger("click");
+                expect(tempo).toEqual(medium);
+            });
+
+        });
+            describe('on click hard difficulty button', function() {
+                it('should remove class "btn-success" from current clicked button', function() {
+                    $("#hard").trigger("click");
+                    expect($("#hard")).toHaveClass('btn-success');
+                });
+                it('should add class "btn-danger" to current clicked button', function() {
+                    $("#hard").trigger("click");
+                    expect($("#hard")).not.toHaveClass('btn-danger');
+                });
+                it('should change tempo to current setting', function() {
+                    speedControl();
+                    expect(tempo).toEqual(hard);
+                });
+            });
+ 
     });
-  });
 
-  // demonstrates use of spies to intercept and test method calls
-  it("tells the current song if the user has made it a favorite", function() {
-    spyOn(song, 'persistFavoriteStatus');
 
-    player.play(song);
-    player.makeFavorite();
-
-    expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);
-  });
-
-  //demonstrates use of expected exceptions
-  describe("#resume", function() {
-    it("should throw an exception if song is already playing", function() {
-      player.play(song);
-
-      expect(function() {
-        player.resume();
-      }).toThrowError("song is already playing");
-    });
-  });
-});
