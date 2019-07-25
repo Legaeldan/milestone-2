@@ -19,14 +19,11 @@ var duration = (movesMade.length * tempo);
 $(".speedControl").on("click", function () {
     $(this).addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
     tempo = eval(this.id);
-    console.log(tempo);
 });
 /**Generates random number, and pushes to moveMade array. */
 function randomise() {
     randomNum = Math.floor(Math.random() * 4);
     movesMade.push(randomNum);
-    console.log(movesMade);
-    console.log(randomNum);
 };
 /**Removes the start section, and brings the game board into view.
  * Initiates the first random number generation, and switches to the computers turn
@@ -77,8 +74,6 @@ function computerTurn() {
         setTimeout(function () {
             $("#simon-main").removeClass("disableInput");
         }, duration);
-        console.log(possibleMoves[colour]);
-        console.log(colour);
     };
 };
 /**Tells the system what to do once buttons are clicked. Checks against array of moves to follow.
@@ -111,7 +106,6 @@ $(".four-buttons").on("click", function () {
         gameOverMessage.innerHTML = "Congratulations! You got " + totalClicks + "! Try again and maybe this time you can get " + (totalClicks + 1) + "!";
         clearGame();
     };
-    console.log(playerMoves);
 });
 /**Clears the game board from view, and brings the start menu back into view. */
 function clearGame() {
