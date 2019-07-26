@@ -80,7 +80,7 @@ The main approach to this game is made to entertain all age groups with healthy 
 
 ### User Stories
 
-- As a user I want the game to have:
+ **As a user I want the game to have:**
  1. An easy to follow system of lights.
  2. And easy to follow system of tones to follow if I can't see well.
  3. Some way of knowing when it is and isn't my turn.
@@ -146,6 +146,35 @@ In the near future, I hopefully will get a chance to impliment a dynamic leaderb
 
 Upon closer inspection, for desktop users, a slider which can control the volume of the beeps would be invaluable. With a design of an upwards facing cone to control the volume, and would hopefully fill some of the void on the left hand side of the screen.
 
+###Testing
+
+As I had trouble deciphering JavaScript initially, I unfortunately did not have enough time to fully get to grips with Jasmine testing framework. As a temporary substitute, I used multiple user based testing instead to define the bugs in the game. I plan to return to the Jasmine testing as I now have a better knowledge of JavaScript, and will have a better chance at understanding Jasmine.
+
+1. **Tester 1**
+    - "I wasn't sure when my turn to go actually was as I've never seen this game before."
+    Tester tried to click each light as the computer turn was in the process of the sequence. Implimented a Waiting and Playing prompt to define when the player could go.
+    - "The playing and waiting prompts are too distracting. I was watching them instead of the sequence."
+    Tester focused more on the animated prompts. The tester eventually overcame this focus after a couple of turns. As a fallback, a disable input class was added to prevent any input at all during the computer turn.
+
+    **Tester 2**
+    - "The sounds don't play when I click, but do when the computer takes a turn."
+    Tester was unable to hear sounds. Found to be an issue with the function for sounds. Rewrote the sounds to be in a more compressed, and more readable standalone function. User was then able to hear sound as expected.
+
+    **Tester 3**
+    - "I like the layout. Simple but works well. Send it to my husband. He'd like this kind of thing."
+    Tester had no issues with the game, and enjoyed the simple layout and idea.
+
+    **Tester 4**
+    - "When I reset the game, one of the buttons sticks behind."
+    Tester found that on certain tries, some of the buttons remained behind for a longer period than the others, resulting in a broken looking animation. The was corrected by adding in a stop function to the current animations on reset or failure.
+    - "I like it. But it feels like it just ends a bit abruptly."
+    Tester did not feel a smooth transition after failure or reset. This inspired the implimentation of a modal to help ease the transition. User was pleased with the new transition, and especially like the altered wording on a 0 click failure.
+
+### Known Bugs
+
+-**Graphical Glitches**
+    There is a known issue with the start button, once clicked and the fade transition begins, the buttons stretch down the screen until the animation is completed. I have yet to find the solution to this. The same issue was seen with the reset function, but was rectified by adding in a stop to all animations.
+dsd
 ## Deployment
 
 This project was developed using the [AWS C9](https://aws.amazon.com/cloud9/) initially before moving locally to [Visual Studio Code](https://code.visualstudio.com/) and [Git](https://git-scm.com/downloads), committed to a local [Git](https://git-scm.com/downloads) repository, and pushed to [GitHub](https://github.com/Legaeldan/milestone-2) using a locally installed version of [Git](https://git-scm.com/downloads) via command prompt.
