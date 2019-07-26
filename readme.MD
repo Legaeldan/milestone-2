@@ -18,7 +18,8 @@ The site is designed with the best user experience in mind, with the most minima
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Features Left to Implement**](#features-left-to-implement)
-    - [**Testing**](#testing)
+
+3. [**Testing**](#testing)
     - [**Known Bugs**](#known-bugs)
 
 3. [**Deployment**](#deployment)
@@ -148,7 +149,7 @@ In the near future, I hopefully will get a chance to impliment a dynamic leaderb
 
 Upon closer inspection, for desktop users, a slider which can control the volume of the beeps would be invaluable. With a design of an upwards facing cone to control the volume, and would hopefully fill some of the void on the left hand side of the screen.
 
-### Testing
+## Testing
 
 As I had trouble deciphering JavaScript initially, I unfortunately did not have enough time to fully get to grips with Jasmine testing framework. As a temporary substitute, I used multiple user based testing instead to define the bugs in the game. I plan to return to the Jasmine testing as I now have a better knowledge of JavaScript, and will have a better chance at understanding Jasmine.
 
@@ -176,6 +177,28 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
 
 -**Graphical Glitches**
     There is a known issue with the start button, once clicked and the fade transition begins, the buttons stretch down the screen until the animation is completed. I have yet to find the solution to this. The same issue was seen with the reset function, but was rectified by adding in a stop to all animations.
+
+## Technologies Used
+
+- This project uses HTML, CSS and JavaScript programming languages.
+- [JQuery](https://jquery.com)
+    - The project uses **JQuery** to simplify DOM manipulation.
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - The project uses **Visual Studio Code** to create all files contained in the site, and push to GitHub.
+- [Git](https://git-scm.com/downloads)
+    - This project uses **Git** to commit and push all files to the [GitHub Repository](https://github.com/Legaeldan/milestone-2).
+- [WampServer](http://www.wampserver.com/en/)
+    - WampServer was utilised to locally host and test all files that couldn't not be run from the file (i.e. JSON in relation to CORS policy).
+- [Bootstrap](https://www.bootstrapcdn.com/)
+    - The project uses **Bootstrap** to simplify the structure of the website and make the website responsive easily.
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** to style the website fonts.
+- [GitHub](https://github.com/)
+    - This project uses **GitHub** to store and share all project code remotely. 
+- [GIMP](https://www.gimp.org/)
+    - This project used tools in **GIMP** to create and edit images such as the logo and favicon.
+- [Visio](https://www.microsoft.com/en-ie/p/visio-standard-2019/cfq7ttc0k7cf?activetab=pivot%3aoverviewtab)
+    - This project used tools in **Visio** to create, edit, and present wireframes in a more professional manner.
 
 ## Deployment
 
