@@ -19,6 +19,7 @@ var duration = (movesMade.length * tempo);
 $(".speedControl").on("click", function () {
     $(this).addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
     tempo = eval(this.id);
+    return tempo;
 });
 /**Generates random number, and pushes to moveMade array. */
 function randomise() {
@@ -113,6 +114,7 @@ function clearGame() {
     const fourbuttons = $(".fourbuttons").children();
     fourbuttons.stop(true, true).toggleClass("light").removeClass("light");
     $(".clear").stop(true, true).fadeOut(1500);
+    $("li").stop(true, true).on("mousedown touchstart mouseout");
     $(".mainControls").delay(1500).fadeIn(1500, 0);
     movesMade = [];
     playerMoves = [];
