@@ -18,12 +18,14 @@ The site is designed with the best user experience in mind, with the most minima
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Features Left to Implement**](#features-left-to-implement)
+    - [**Testing**](#testing)
+    - [**Known Bugs**](#known-bugs)
 
-5. [**Deployment**](#deployment)
+3. [**Deployment**](#deployment)
     - [**Deployment to GitHub Pages**](#deployment-to-github-pages)
     - [**Running this project locally**](#running-this-project-locally)
 
-6. [**Credits**](#credits)
+4. [**Credits**](#credits)
 
 
 ## UX
