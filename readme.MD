@@ -80,6 +80,14 @@ The main approach to this game is made to entertain all age groups with healthy 
 
 ### User Stories
 
+- As a user I want the game to have:
+ 1. An easy to follow system of lights.
+ 2. And easy to follow system of tones to follow if I can't see well.
+ 3. Some way of knowing when it is and isn't my turn.
+ 4. A way to reset my game if I decided I can't go any further.
+ 5. A level counter so I can say I achieved a certain level.
+ 6. An easy to look at colour scheme and webpage in general with as little clutter as possible.
+
 ## Features
  
 ### Existing Features
