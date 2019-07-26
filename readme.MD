@@ -146,7 +146,7 @@ In the near future, I hopefully will get a chance to impliment a dynamic leaderb
 
 Upon closer inspection, for desktop users, a slider which can control the volume of the beeps would be invaluable. With a design of an upwards facing cone to control the volume, and would hopefully fill some of the void on the left hand side of the screen.
 
-###Testing
+### Testing
 
 As I had trouble deciphering JavaScript initially, I unfortunately did not have enough time to fully get to grips with Jasmine testing framework. As a temporary substitute, I used multiple user based testing instead to define the bugs in the game. I plan to return to the Jasmine testing as I now have a better knowledge of JavaScript, and will have a better chance at understanding Jasmine.
 
@@ -174,7 +174,7 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
 
 -**Graphical Glitches**
     There is a known issue with the start button, once clicked and the fade transition begins, the buttons stretch down the screen until the animation is completed. I have yet to find the solution to this. The same issue was seen with the reset function, but was rectified by adding in a stop to all animations.
-dsd
+
 ## Deployment
 
 This project was developed using the [AWS C9](https://aws.amazon.com/cloud9/) initially before moving locally to [Visual Studio Code](https://code.visualstudio.com/) and [Git](https://git-scm.com/downloads), committed to a local [Git](https://git-scm.com/downloads) repository, and pushed to [GitHub](https://github.com/Legaeldan/milestone-2) using a locally installed version of [Git](https://git-scm.com/downloads) via command prompt.
