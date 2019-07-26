@@ -244,8 +244,8 @@ Inspiration for this project was found at [Medium.com](https://medium.com/front-
 
 #### Testers
 
-    A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my site, and giving genuine feedback which helped develop the site into what it is now. Due to my limited knowledge of testing in Jasmine, they were heavily relied upon for their feedback and support, and every bit helped shape this game.
+A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my site, and giving genuine feedback which helped develop the site into what it is now. Due to my limited knowledge of testing in Jasmine, they were heavily relied upon for their feedback and support, and every bit helped shape this game.
 
 #### Guidance
 
-    I received inspiration and assistance on this project from Simen Daehlin (Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://www.javascript.com/), but he pointed me in the right direction with each hurdle.
+I received inspiration and assistance on this project from Simen Daehlin (Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://www.javascript.com/), but he pointed me in the right direction with each hurdle.
