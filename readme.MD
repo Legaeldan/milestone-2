@@ -22,11 +22,13 @@ The site is designed with the best user experience in mind, with the most minima
 3. [**Testing**](#testing)
     - [**Known Bugs**](#known-bugs)
 
-3. [**Deployment**](#deployment)
+4. [**Technologies Used**](#technologies-used)
+
+5. [**Deployment**](#deployment)
     - [**Deployment to GitHub Pages**](#deployment-to-github-pages)
     - [**Running this project locally**](#running-this-project-locally)
 
-4. [**Credits**](#credits)
+6. [**Credits**](#credits)
 
 
 ## UX
