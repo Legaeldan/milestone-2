@@ -151,6 +151,10 @@ In the near future, I hopefully will get a chance to impliment a dynamic leaderb
 
 Upon closer inspection, for desktop users, a slider which can control the volume of the beeps would be invaluable. With a design of an upwards facing cone to control the volume, and would hopefully fill some of the void on the left hand side of the screen.
 
+3. **Rules**
+
+During testing, it was realised that not everyone is familiar with this game. Therefore I hope to impliment a rules section, but currently am unsure in how to integrate it into the site without impacting the minimalistic design.
+
 ## Testing
 
 As I had trouble deciphering JavaScript initially, I unfortunately did not have enough time to fully get to grips with Jasmine testing framework. As a temporary substitute, I used multiple user based testing instead to define the bugs in the game. I plan to return to the Jasmine testing as I now have a better knowledge of JavaScript, and will have a better chance at understanding Jasmine.
