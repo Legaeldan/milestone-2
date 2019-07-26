@@ -11,9 +11,9 @@ The site is designed with the best user experience in mind, with the most minima
 1. [**UX**](#ux)
     - [**Project Goals**](#project-goal)
     - [**Development Goals**](#development-Goals)
+    - [**User Stories**](#user-stories)
     - [**Wireframes**](#wireframes)
     - [**Design choices**](#design-choices)
-    - [**User Stories**](#user-stories)
 
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
@@ -43,6 +43,16 @@ This game is design with all users in mind, from children to adults, and tries t
 - A project I'd be excited to show off to people as a testament to my abilities. 
 - Well thought out programming to account for the unpredictability of users both young and old. 
 - Something that looked professional even for a novice programmer on their first venture in JavaScript and jQuery. 
+
+### User Stories
+
+ **As a user I want the game to have:**
+ 1. An easy to follow system of lights.
+ 2. And easy to follow system of tones to follow if I can't see well.
+ 3. Some way of knowing when it is and isn't my turn.
+ 4. A way to reset my game if I decided I can't go any further.
+ 5. A level counter so I can say I achieved a certain level.
+ 6. An easy to look at colour scheme and webpage in general with as little clutter as possible.
 
 ### Wireframes
 
@@ -80,16 +90,6 @@ The main approach to this game is made to entertain all age groups with healthy 
 **Audio files**
 
 - Different toned beeps were chosen to make retention of the pattern easier to the user. Enabling both memory of sight, and sound.
-
-### User Stories
-
- **As a user I want the game to have:**
- 1. An easy to follow system of lights.
- 2. And easy to follow system of tones to follow if I can't see well.
- 3. Some way of knowing when it is and isn't my turn.
- 4. A way to reset my game if I decided I can't go any further.
- 5. A level counter so I can say I achieved a certain level.
- 6. An easy to look at colour scheme and webpage in general with as little clutter as possible.
 
 ## Features
  
