@@ -16,46 +16,46 @@ describe('Main control control button functions', function() {
 
     describe('on click easy difficulty button', function() {
         it('should remove class "btn-success" from current clicked button', function() {
-            $("#easy").click();
-            expect($("#easy").hasClass('btn-success')).toBe(true);
+            $("#easy").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+            expect($("#easy").hasClass('btn-success')).toBe(false);
         });
         it('should add class "btn-danger" to current clicked button', function() {
-            $("#easy").click();
-            expect($("#easy")).not.toHaveClass('btn-danger');
+            $("#easy").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+            expect($("#easy")).toHaveClass('btn-danger');
         });
         it('should change tempo to current setting', function() {
-            $("#easy").click();
+            tempo = eval(easy);
             expect(tempo).toEqual(easy);
         });
     });
 
         describe('on click medium difficulty button', function() {
             it('should remove class "btn-success" from current clicked button', function() {
-                $("#medium").click();
-                expect($("#medium")).toHaveClass('btn-success');
+                $("#medium").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+                expect($("#medium").hasClass('btn-success')).toBe(false);
             });
             it('should add class "btn-danger" to current clicked button', function() {
-                $("#medium").click();
-                expect($("#medium")).not.toHaveClass('btn-danger');
+                $("#medium").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+                expect($("#medium")).toHaveClass('btn-danger');
             });
             it('should change tempo to current setting', function() {
-                $("#medium").click();
-                expect(eval(tempo)).toEqual(medium);
+                tempo = eval(medium);
+                expect(tempo).toEqual(medium);
             });
 
         });
             describe('on click hard difficulty button', function() {
                 it('should remove class "btn-success" from current clicked button', function() {
-                    $("#hard").trigger("click");
-                    expect($("#hard")).toHaveClass('btn-success');
+                    $("#hard").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+                    expect($("#hard").hasClass('btn-success')).toBe(false);
                 });
                 it('should add class "btn-danger" to current clicked button', function() {
-                    $("#hard").trigger("click");
-                    expect($("#hard")).not.toHaveClass('btn-danger');
+                    $("#hard").addClass("btn-danger").removeClass("btn-success").siblings().removeClass("btn-danger").addClass("btn-success");
+                    expect($("#hard")).toHaveClass('btn-danger');
                 });
                 it('should change tempo to current setting', function() {
-                    $("#hard").trigger("click");
-                    expect(eval(tempo)).toEqual(hard);
+                    tempo = eval(hard);
+                    expect(tempo).toEqual(hard);
                 });
             });
  
