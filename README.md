@@ -9,8 +9,8 @@ The site is designed with the best user experience in mind, with the most minima
 
 ## Table of Contents
 1. [**UX**](#ux)
-    - [**Project Goals**](#project-goal)
-    - [**Development Goals**](#development-Goals)
+    - [**Project Goals**](#project-goals)
+    - [**development Goal**](#development-goal)
     - [**User Stories**](#user-stories)
     - [**Wireframes**](#wireframes)
     - [**Design choices**](#design-choices)
@@ -159,30 +159,39 @@ During testing, it was realised that not everyone is familiar with this game. Th
 
 As I had trouble deciphering JavaScript initially, I unfortunately did not have enough time to fully get to grips with Jasmine testing framework. As a temporary substitute, I used multiple user based testing instead to define the bugs in the game. I plan to return to the Jasmine testing as I now have a better knowledge of JavaScript, and will have a better chance at understanding Jasmine.
 
-1. **Tester 1**
+- **Tester 1**
     - "I wasn't sure when my turn to go actually was as I've never seen this game before."
     Tester tried to click each light as the computer turn was in the process of the sequence. Implimented a Waiting and Playing prompt to define when the player could go.
     - "The playing and waiting prompts are too distracting. I was watching them instead of the sequence."
     Tester focused more on the animated prompts. The tester eventually overcame this focus after a couple of turns. As a fallback, a disable input class was added to prevent any input at all during the computer turn.
 
-    **Tester 2**
+- **Tester 2**
     - "The sounds don't play when I click, but do when the computer takes a turn."
     Tester was unable to hear sounds. Found to be an issue with the function for sounds. Rewrote the sounds to be in a more compressed, and more readable standalone function. User was then able to hear sound as expected.
 
-    **Tester 3**
+- **Tester 3**
     - "I like the layout. Simple but works well. Send it to my husband. He'd like this kind of thing."
     Tester had no issues with the game, and enjoyed the simple layout and idea.
 
-    **Tester 4**
+- **Tester 4**
     - "When I reset the game, one of the buttons sticks behind."
     Tester found that on certain tries, some of the buttons remained behind for a longer period than the others, resulting in a broken looking animation. The was corrected by adding in a stop function to the current animations on reset or failure.
     - "I like it. But it feels like it just ends a bit abruptly."
     Tester did not feel a smooth transition after failure or reset. This inspired the implimentation of a modal to help ease the transition. User was pleased with the new transition, and especially like the altered wording on a 0 click failure.
 
+- **Tester 5**
+    - GRAPHIC STAYING ON SCREEN
+
 ### Known Bugs
 
--**Graphical Glitches**
+- **Graphical Glitches**
     There is a known issue with the start button, once clicked and the fade transition begins, the buttons stretch down the screen until the animation is completed. I have yet to find the solution to this. The same issue was seen with the reset function, but was rectified by adding in a stop to all animations.
+
+- **Sound Issues**
+SOUND ISSUES ON MOBILE
+
+- **VALIDATOR CODE**
+
 
 ## Technologies Used
 
@@ -193,14 +202,10 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
     - The project uses **Visual Studio Code** to create all files contained in the site, and push to GitHub.
 - [Git](https://git-scm.com/downloads)
     - This project uses **Git** to commit and push all files to the [GitHub Repository](https://github.com/Legaeldan/milestone-2).
-- [WampServer](http://www.wampserver.com/en/)
-    - WampServer was utilised to locally host and test all files that couldn't not be run from the file (i.e. JSON in relation to CORS policy).
 - [Bootstrap](https://www.bootstrapcdn.com/)
     - The project uses **Bootstrap** to simplify the structure of the website and make the website responsive easily.
 - [Google Fonts](https://fonts.google.com/)
     - The project uses **Google fonts** to style the website fonts.
-- [GitHub](https://github.com/)
-    - This project uses **GitHub** to store and share all project code remotely. 
 - [GIMP](https://www.gimp.org/)
     - This project used tools in **GIMP** to create and edit images such as the logo and favicon.
 - [Visio](https://www.microsoft.com/en-ie/p/visio-standard-2019/cfq7ttc0k7cf?activetab=pivot%3aoverviewtab)
@@ -216,7 +221,7 @@ The main method of deployment, [GitHub Pages](https://legaeldan.github.io/milest
 
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Legaeldan/milestone-2), the following steps were taken: 
 1. Log into GitHub. 
-2. From the list of repositories on the screen, select **Legaeldan/milestone-2**.
+2. From the list of repositories on the screen, select **USERNAME/REPOSITORY**.
 3. From the menu items near the top of the page, select **Settings**.
 4. Scroll down to the **GitHub Pages** section.
 5. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
@@ -229,12 +234,11 @@ To clone this project from GitHub:
 1. Follow this link to the [GitHub repository](https://github.com/Legaeldan/milestone-2).
 2. Under the repository name, click the green "Clone or download" button.
 3. In the Clone with HTTPs section, copy the clone URL for the repository. 
-4. In your local editor program, open Git Bash.
+4. In your local editor program, open a terminal.
 5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type ```git clone```
-, and then paste the URL you copied in Step 3.
+6. Type ```git clone```, and then paste the URL you copied in Step 3.
 
-```git clone https://github.com/USERNAME/REPOSITORY```
+```git clone https://github.com/Legaeldan/milestone-2```
 
 7. Press Enter. Your local clone will be created.
 
@@ -252,4 +256,7 @@ A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my 
 
 #### Guidance
 
-I received inspiration and assistance on this project from Simen Daehlin (Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://www.javascript.com/), but he pointed me in the right direction with each hurdle.
+I received inspiration and assistance on this project from [Simen Daehlin (Eventyret)](https://github.com/Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), but he pointed me in the right direction with each hurdle.
+
+
+EDUCATIONAL PREFERENCES ONLY
