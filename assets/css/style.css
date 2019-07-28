@@ -1,236 +1,238 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
 @font-face {
-    font-family: "Squada One";
-    src: url('../lib/fonts/SquadaOne-Regular.ttf');
+ font-family: "Squada One";
+ src: url('../lib/fonts/SquadaOne-Regular.ttf');
 }
 
 body {
-    user-select: none;
-    background-color: #071013;
-    color: #ebebeb;
-    text-align: center;
-    font-family: "Rubik Mono One", "Squada One", "sans-serif";
+ user-select: none;
+ background-color: #071013;
+ color: #ebebeb;
+ text-align: center;
+ font-family: "Rubik Mono One", "Squada One", sans-serif;
 }
 
 .disableInput {
-    pointer-events: none;
+ pointer-events: none;
 }
 
 .modal-content {
-    color: #071013;
+ color: #071013;
 }
 
 .warning {
-    display: none;
-    position: absolute;
-    font-size: 2em;
-    top: 70vh;
+ display: none;
+ position: absolute;
+ font-size: 2em;
+ top: 70vh;
 }
 
 #logo {
-    display: none;
-    position: absolute;
-    max-height: 80vh;
-    max-width: 100%;
-    top: 10%;
+ display: none;
+ position: absolute;
+ max-height: 80vh;
+ max-width: 100%;
+ top: 10%;
 }
 
 #gameControls {
-    display: flex;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 .speedControl {
-    display: none;
-    font-size: .8em;
-    margin: 10px;
-    margin-top: 390px;   
+ display: none;
+ font-size: .8em;
+ margin: 10px;
+ margin-top: 390px;
 }
 
 .hidden {
-    display: none;
+ display: none;
 }
 
 .title-section {
-    padding: 20px 0px;
+ padding: 20px 0px;
 }
 
 #clicker {
-    display: none;
+ display: none;
 }
 
 #start-game {
-    display: none;
-    margin-top: 170px;
-    position: absolute;
-    top: 0px;
-    width: 200px;
-    font-size: 2em;
+ display: none;
+ margin-top: 170px;
+ position: absolute;
+ top: 0px;
+ width: 200px;
+ font-size: 2em;
 }
 
 #reset {
-    display: none;
-    margin-top: 20px;
+ display: none;
+ margin-top: 20px;
 }
 
 #game-title {
-    font-size: 1.7em;
-    display: none;
+ font-size: 1.7em;
+ display: none;
 }
 
 #main-section {
-    display: flex;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 #simon-main {
-    display: none;
-    list-style: none;
-    padding: 0;
+ display: none;
+ list-style: none;
+ padding: 0;
 }
 
 #red {
-    border: 4px solid #DF2833;
+ border: 4px solid #DF2833;
 }
 
 #blue {
-    border: 4px solid #0034FF;
+ border: 4px solid #0034FF;
 }
 
 #green {
-    border: 4px solid #018E42;
+ border: 4px solid #018E42;
 }
 
 #yellow {
-    border: 4px solid #F7D002;
+ border: 4px solid #F7D002;
 }
 
 #red.light {
-    border: 4px solid #ff0000;
-    background-color: #DF2833;
-    box-shadow: 0 0 45px 10px #DF2833;
+ border: 4px solid #ff0000;
+ background-color: #DF2833;
+ box-shadow: 0 0 45px 10px #DF2833;
 }
 
 #blue.light {
-    border: 4px solid #1500ff;
-    background-color: #0034FF;
-    box-shadow: 0 0 45px 10px #0034FF;
+ border: 4px solid #1500ff;
+ background-color: #0034FF;
+ box-shadow: 0 0 45px 10px #0034FF;
 }
 
 #green.light {
-    border: 4px solid #00d620;
-    background-color: #018E42;
-    box-shadow: 0 0 45px 10px #018E42;
+ border: 4px solid #00d620;
+ background-color: #018E42;
+ box-shadow: 0 0 45px 10px #018E42;
 }
 
 #yellow.light {
-    border: 4px solid #ffff00;
-    background-color: #F7D002;
-    box-shadow: 0 0 45px 10px #F7D002;
+ border: 4px solid #ffff00;
+ background-color: #F7D002;
+ box-shadow: 0 0 45px 10px #F7D002;
 }
 
 #levelNo {
-    display: none;
+ display: none;
 }
 
 
 li {
-    float: left;
-    margin: 25px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+ float: left;
+ margin: 25px;
+ width: 100px;
+ height: 100px;
+ border-radius: 50px;
 }
 
 #clickCounter {
-    font-size: 2em;
+ font-size: 2em;
 }
 
 @media (min-width: 768px) {
-    .title-section {
-        padding: 50px 0px;
-    }
+ .title-section {
+ padding: 50px 0px;
+ }
 
-    .warning {
-        font-size: 3em;
-    }
+ .warning {
+ font-size: 3em;
+ }
 
-    #game-title {
-        font-size: 3em
-    }
+ #game-title {
+ font-size: 3em
+ }
 
-    #start-game {
-        font-size: 5em;
-        margin-top: 220px;
-        width: 420px;
-        margin-left: 0;
-    }
+ #start-game {
+ font-size: 5em;
+ margin-top: 220px;
+ width: 420px;
+ margin-left: 0;
+ }
 
-    li {
-        width: 140px;
-        height: 140px;
-        border-radius: 70px;
-    }
+ li {
+ width: 140px;
+ height: 140px;
+ border-radius: 70px;
+ }
 
-    #red {
-        border: 10px solid #DF2833;
-    }
-    
-    #blue {
-        border: 10px solid #0034FF;
-    }
-    
-    #green {
-        border: 10px solid #018E42;
-    }
-    
-    #yellow {
-        border: 10px solid #F7D002;
-    }
+ #red {
+ border: 10px solid #DF2833;
+ }
 
-    #red.light {
-        border: 10px solid #ff0000;
-    }
-    
-    #blue.light {
-        border: 10px solid #1500ff;
-    }
-    
-    #green.light {
-        border: 10px solid #00d620;
-    }
-    
-    #yellow.light {
-        border: 10px solid #ffff00;
-    }
+ #blue {
+ border: 10px solid #0034FF;
+ }
 
-    .speedControl {
-        font-size: 1.5em;
-    }
+ #green {
+ border: 10px solid #018E42;
+ }
+
+ #yellow {
+ border: 10px solid #F7D002;
+ }
+
+ #red.light {
+ border: 10px solid #ff0000;
+ }
+
+ #blue.light {
+ border: 10px solid #1500ff;
+ }
+
+ #green.light {
+ border: 10px solid #00d620;
+ }
+
+ #yellow.light {
+ border: 10px solid #ffff00;
+ }
+
+ .speedControl {
+ font-size: 1.5em;
+ }
 
 }
 
 @media (min-width: 992px) {
 
-    li {
-        width: 250px;
-        height: 250px;
-        border-radius: 125px;
-    }
+ li {
+ width: 250px;
+ height: 250px;
+ border-radius: 125px;
+ }
 
-#simon-main {
-    max-width: 600px;
-}
-#levelNo {
-    left: 45%;
-    top: 45%;
-}
+ #simon-main {
+ max-width: 600px;
+ }
+
+ #levelNo {
+ left: 45%;
+ top: 45%;
+ }
 
 
 }
 
 @media (min-width: 1025px) {
-    #logo {
-        top: -55px;
-    }
-    }
+ #logo {
+ top: -55px;
+ }
+}
