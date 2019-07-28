@@ -1,0 +1,11 @@
+change labels in Js to singl line on js function
+HTML Validator
+Change var to let and test - if no errors, then leave as let
+
+read up on css variables 2019 - https://www.youtube.com/watch?v=sQUB039MG0I
+
+
+readme
+	CHECK EVERYTHING!!!!!
+
+Make sure you add some CSS and HTML comments
