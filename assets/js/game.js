@@ -37,8 +37,8 @@ $("#start-game").on("click", function () {
     document.getElementById("clickCounter").innerHTML = totalClicks;
     $(this).fadeOut(1500);
     $(".speedControl").fadeOut(1500);
-    $(".fader").delay(1500).fadeIn(1500);  
-    $("#reset").delay(1500).fadeIn(1500);  
+    $(".fader").delay(1500).fadeIn(1500);
+    $("#reset").delay(1500).fadeIn(1500);
     //Disables clicker on mobile devices for clean layout.
     if (window.innerWidth > 767) {
         $("#clicker").delay(1500).fadeIn(1500);
@@ -53,13 +53,13 @@ $("#start-game").on("click", function () {
 });
 /**Sets delay and colour lighting for each iteration of the computer turn loop. */
 function compEachTurn(tempo, i, color) {
-setTimeout(function () {
-    $("#"+color).delay(tempo * i).toggleClass("light");
-    playSound(color);
     setTimeout(function () {
-        $("#"+color).toggleClass("light");
-    }, tempo / 2);
-}, tempo * i);
+        $("#" + color).delay(tempo * i).toggleClass("light");
+        playSound(color);
+        setTimeout(function () {
+            $("#" + color).toggleClass("light");
+        }, tempo / 2);
+    }, tempo * i);
 };
 /**Initiates the computer turn loop based on array length of movesMade.
  * Disables input until completed.
@@ -72,7 +72,7 @@ function computerTurn() {
     for (let i = 0; i < movesMade.length; i++) {
         const colour = movesMade[i];
         const endColour = possibleMoves[colour];
-        compEachTurn (tempo, i, endColour)
+        compEachTurn(tempo, i, endColour)
         setTimeout(function () {
             $("#simon-main").removeClass("disableInput");
         }, duration);
@@ -129,7 +129,7 @@ $("li").on("mousedown touchstart", function () {
     $(this).removeClass("light");
 });
 /**Creates the sound file link based on colour of argument input. */
-function playSound(color){
-    simonSound.src="assets/sounds/"+color+"Sound.mp3"
+function playSound(color) {
+    simonSound.src = "assets/sounds/" + color + "Sound.mp3"
     simonSound.play();
 }
