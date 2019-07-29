@@ -191,6 +191,9 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
 - **Sound Issues**
     During testing, it was noted that sound has an issue on mobile only. I experienced this during testing of the desktop side version, but managed to overcome by increasing the delay between sounds as they overlapped. There seems to be a similar issue, but the sound is delayed on actual mobile, causing the sounds to overlap again, creating a static crack at the end of each sound. I have yet to find a solution to this issue. **(Note: This is on a physical mobile, not on mobile size via Chrome desktop.)**
 
+- **Persistent Lights**
+    An issue that I'm unable to correct currently, despite testing multiple option, is currently only on desktop on the hover of the main game buttons. When a user leaves the mouse to hover over a button that is currently in the array to be lit by the computer, the button retains it's light class into the next round. This disappears once the user leaves the button, but only once input is re-enabled by the disableInput class. I have yet find a solution, but a work around is moving the mouse over, then out of the button during the player turn. As I have no hover psuedo elements currently, I am unable to find the cause of this error.
+
 - **HTML Validation**
     There is a known issue with a DIV block located inside a UL. Currently the layout works well, and responsiveness works best with the DIV inside the UL. But HTML validator throws an error with this. Currently I am exploring options that react responsively like it currently is, but will have to rewrite the CSS to accomodate this change which I am trying to avoid.
 
@@ -255,7 +258,7 @@ Inspiration for this project was found at [Medium.com](https://medium.com/front-
 
 #### Testers
 
-A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my site, and giving genuine feedback which helped develop the site into what it is now. Due to my limited knowledge of testing in Jasmine, they were heavily relied upon for their feedback and support, and every bit helped shape this game.
+A special thank you to Simen, Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my site, and giving genuine feedback which helped develop the site into what it is now. Due to my limited knowledge of testing in Jasmine, they were heavily relied upon for their feedback and support, and every bit helped shape this game.
 
 #### Guidance
 
@@ -263,4 +266,4 @@ I received inspiration and assistance on this project from [Simen Daehlin (Event
 
 ## Disclaimer
 
-Please note that all code and images in this site are for educational purposes only. The simon game concept is in no way owned by me, and this site uses the games concept only to show the ability in the language of Javascript. 
+Please note that all code and images in this site are for educational purposes only. The simon game concept is in no way owned by me, and this site uses the games concept only to show the developers ability in the language of Javascript. 
