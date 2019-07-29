@@ -39,6 +39,7 @@ $("#start-game").on("click", function () {
     $(".speedControl").fadeOut(1500);
     $(".fader").delay(1500).fadeIn(1500);  
     $("#reset").delay(1500).fadeIn(1500);  
+    //Disables clicker on mobile devices for clean layout.
     if (window.innerWidth > 767) {
         $("#clicker").delay(1500).fadeIn(1500);
     }
