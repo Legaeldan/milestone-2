@@ -188,7 +188,7 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
     There is a known issue with the start button, once clicked and the fade transition begins, the buttons stretch down the screen until the animation is completed. I have yet to find the solution to this. The same issue was seen with the reset function, but was rectified by adding in a stop to all animations.
 
 - **Sound Issues**
-SOUND ISSUES ON MOBILE
+    During testing, it was noted that sound has an issue on mobile only. I experienced this during testing of the desktop side version, but managed to overcome by increasing the delay between sounds as they overlapped. There seems to be a similar issue, but the sound is delayed on actual mobile, causing the sounds to overlap again, creating a static crack at the end of each sound. I have yet to find a solution to this issue. **(Note: This is on a physical mobile, not on mobile size via Chrome desktop.)**
 
 - **VALIDATOR CODE**
 
