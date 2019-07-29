@@ -30,6 +30,8 @@ The site is designed with the best user experience in mind, with the most minima
 
 6. [**Credits**](#credits)
 
+7. [**Disclaimer**](#disclaimer)
+
 
 ## UX
 
@@ -258,7 +260,6 @@ A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my 
 #### Guidance
 
 I received inspiration and assistance on this project from [Simen Daehlin (Eventyret)](https://github.com/Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), but he pointed me in the right direction with each hurdle.
-
 
 ## Disclaimer
 
