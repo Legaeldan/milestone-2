@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <link rel="icon" href="assets/images/favicon.png">
 </head>
+
 <body>
   <div class="container-fluid">
     <div class="row">
@@ -18,33 +20,39 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3" id="main-section">
+        <!--Main page logo-->
         <img id="logo" src="assets/images/logo.png" alt="Simon Says Logo">
+        <!--Start button and speed controls-->
         <div id="gameControls">
-        <button type="button" class="btn btn-success mainControls" id="start-game">Start!</button>
-        <button type="button" class="btn btn-danger speedControl mainControls" id="easy">Easy</button>
-        <button type="button" class="btn btn-success speedControl mainControls" id="medium">Medium</button>
-        <button type="button" class="btn btn-success speedControl mainControls" id="hard">Hard</button>
+          <button type="button" class="btn btn-success mainControls" id="start-game">Start!</button>
+          <button type="button" class="btn btn-danger speedControl mainControls" id="easy">Easy</button>
+          <button type="button" class="btn btn-success speedControl mainControls" id="medium">Medium</button>
+          <button type="button" class="btn btn-success speedControl mainControls" id="hard">Hard</button>
         </div>
+        <!--Game board buttons-->
         <ul id="simon-main" class="fader clear">
           <li id="red" class="four-buttons"></li>
           <li id="green" class="four-buttons"></li>
-          <div id="levelNo" class ="fader clear"></div>
+          <div id="levelNo" class="fader clear"></div>
           <li id="yellow" class="four-buttons"></li>
           <li id="blue" class="four-buttons"></li>
         </ul>
+        <!--User prompts-->
         <div class="warning clear" id="waiting">WAIT.....</div>
         <div class="warning clear" id="playing">PLAY!</div>
       </div>
       <div class="col-sm-12 col-xl-2">
+        <!--Click counter-->
         <div id="clicker" class="clear">
-        <h4 id="clickHeader">Total clicks:</h4>
-        <div id="clickCounter">0</div>
+          <h4 id="clickHeader">Total clicks:</h4>
+          <div id="clickCounter">0</div>
         </div>
+        <!--Reset button-->
         <button type="button" class="btn btn-success clear" id="reset">Reset!</button>
       </div>
     </div>
   </div>
-  <!--modal below-->
+  <!--Game over modal-->
   <div class="modal fade" id="gameOver" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -59,10 +67,10 @@
       </div>
     </div>
   </div>
-<script src="assets/lib/js/jquery-3.4.1.min.js"></script>
-<script src="assets/lib/js/popper.min.js"></script>
-<script src="assets/lib/js/bootstrap.min.js"></script>
-<script src="assets/js/game.js"></script>
+  <script src="assets/lib/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/lib/js/popper.min.js"></script>
+  <script src="assets/lib/js/bootstrap.min.js"></script>
+  <script src="assets/js/game.js"></script>
 </body>
 
 </html>
