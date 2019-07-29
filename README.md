@@ -174,13 +174,12 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
     Tester had no issues with the game, and enjoyed the simple layout and idea.
 
 - **Tester 4**
-    - "When I reset the game, one of the buttons sticks behind."
-    Tester found that on certain tries, some of the buttons remained behind for a longer period than the others, resulting in a broken looking animation. The was corrected by adding in a stop function to the current animations on reset or failure.
     - "I like it. But it feels like it just ends a bit abruptly."
     Tester did not feel a smooth transition after failure or reset. This inspired the implimentation of a modal to help ease the transition. User was pleased with the new transition, and especially like the altered wording on a 0 click failure.
 
 - **Tester 5**
-    - GRAPHIC STAYING ON SCREEN
+    - "When I reset the game, one of the buttons sticks behind."
+    Tester found that on certain tries, some of the buttons remained behind for a longer period than the others, resulting in a broken looking animation. The was corrected by adding in a stop function to the current animations on reset or failure.
 
 ### Known Bugs
 
@@ -190,8 +189,8 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
 - **Sound Issues**
     During testing, it was noted that sound has an issue on mobile only. I experienced this during testing of the desktop side version, but managed to overcome by increasing the delay between sounds as they overlapped. There seems to be a similar issue, but the sound is delayed on actual mobile, causing the sounds to overlap again, creating a static crack at the end of each sound. I have yet to find a solution to this issue. **(Note: This is on a physical mobile, not on mobile size via Chrome desktop.)**
 
-- **VALIDATOR CODE**
-
+- **HTML Validation**
+    There is a known issue with a DIV block located inside a UL. Currently the layout works well, and responsiveness works best with the DIV inside the UL. But HTML validator throws an error with this. Currently I am exploring options that react responsively like it currently is, but will have to rewrite the CSS to accomodate this change which I am trying to avoid.
 
 ## Technologies Used
 
@@ -210,6 +209,8 @@ As I had trouble deciphering JavaScript initially, I unfortunately did not have 
     - This project used tools in **GIMP** to create and edit images such as the logo and favicon.
 - [Visio](https://www.microsoft.com/en-ie/p/visio-standard-2019/cfq7ttc0k7cf?activetab=pivot%3aoverviewtab)
     - This project used tools in **Visio** to create, edit, and present wireframes in a more professional manner.
+- [HTML Validator](https://validator.w3.org/)
+    - This project utilised the HTML validator provided by W3C to check and correct any issues in my current HTML code.
 
 ## Deployment
 
@@ -259,4 +260,6 @@ A special thank you to Trudy, Liz, Pascal, Hugh, Brid, and Brian for testing my 
 I received inspiration and assistance on this project from [Simen Daehlin (Eventyret)](https://github.com/Eventyret), who assisted above and beyond to help improve the site. I initially felt it would be an impossibility to comprehend [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), but he pointed me in the right direction with each hurdle.
 
 
-EDUCATIONAL PREFERENCES ONLY
+## Disclaimer
+
+Please note that all code and images in this site are for educational purposes only. The simon game concept is in no way owned by me, and this site uses the games concept only to show the ability in the language of Javascript. 
